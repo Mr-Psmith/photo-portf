@@ -1,0 +1,96 @@
+.PGallerySelection_main {
+    width: 80vw;
+    margin: 1vh auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.PGallerySelection__Box1 {
+    flex-basis: 10%;
+    height: 25vh;
+    width: 20vw;
+    background-color: gray;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box2 {
+    height: 25vh;
+    width: 20vw;
+    background-color: darkgrey;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box3 {
+    height: 25vh;
+    width: 40vw;
+    background-color: firebrick;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box4 {
+    height: 25vh;
+    width: 30vw;
+    background-color: salmon;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box5 {
+    height: 25vh;
+    width: 27vw;
+    background-color: aquamarine;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box6 {
+    height: 25vh;
+    width: 33vw;
+    background-color: wheat;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box7 {
+    height: 25vh;
+    width: 41vw;
+    background-color: goldenrod;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box8 {
+    height: 25vh;
+    width: 27vw;
+    background-color: tan;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box9 {
+    height: 25vh;
+    width: 31vw;
+    background-color: teal;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box10 {
+    height: 25vh;
+    width: 54vw;
+    background-color: thistle;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box12 {
+    height: 25vh;
+    width: 43vw;
+    background-color: tomato;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box13 {
+    height: 25vh;
+    width: 32vw;
+    background-color: turquoise;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box14 {
+    height: 25vh;
+    width: 70vw;
+    background-color: red;
+    margin: 1vh 1vw;
+}
+.PGallerySelection__Box15 {
+    height: 25vh;
+    width: 50vw;
+    background-color: chocolate;
+    margin: 1vh 1vw;
+}
+
+

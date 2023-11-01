@@ -1,0 +1,15 @@
+.main__App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  grid-template-rows: 20% 75% 5%; */
+  margin: 0;
+}
+section {
+  margin: 0;
+}
+
+/* .section__footer {
+  background-color: ;
+} */

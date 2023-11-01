@@ -1,0 +1,18 @@
+.menu_main {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 0 auto;
+    background-color: black; /* background ide is majd a monochrome */
+    border-bottom: snow 1px solid;
+    border-top: snow 1px solid;
+
+}
+.menu_main li {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 1vh 2vw;
+    list-style: none;
+}
