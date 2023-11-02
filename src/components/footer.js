@@ -1,17 +1,18 @@
 import classes from "./footer.module.css";
 
-
-
-function Footer() {
-
-
-return (
-    <>
-        <div className={classes.footer_main}>
-            <h1>valami</h1>
-        </div>
-    </>
-)
+function Footer(props) {
+    
+    return (
+        <>
+            <div className={classes.footer}>
+                <li className={classes.mainFooter__link}>
+                    <button className={classes.link} onClick={props.emailCopyHandler}>
+                        psancthus@gmail.com
+                    </button>
+                </li>
+            </div>
+        </>
+    );
 }
 
 export default Footer;

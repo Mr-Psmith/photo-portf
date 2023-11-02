@@ -1,31 +1,45 @@
 .headerUpper {
     height: 10vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(rgba(3, 12, 12, 0.933), rgba(3, 12, 12, 0.933)),url(../img/IMGP7571-3.jpg) no-repeat;
+    background-size: cover;
 }
 
 .headerUpper__left {
     margin: 0 auto;
-    padding: 1vh 1vw;
-
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.headerUpper__left h1 {
+    font-size: 2vh;
+    margin: auto;
+    
 }
 
 .pWord {
     font-family: "EnchantedLand";
     margin: 0 auto;
-    position: relative;
-    top: 1vh;
-    left: 49vw;
-    font-size: 4rem;
+    position: absolute;
+    top: 0vh;
+    left: 75vw;
+    font-size: 5vh;
     font-weight: 400;
 }
 .sWord {
     font-family: "EnchantedLand";
     margin: 0 auto;
-    position: relative;
-    top: -1vh;
-    left: 49.7vw;
-    font-size: 4rem;
+    position: absolute;
+    top: 3vh;
+    left: 75.7vw;
+    font-size: 5vh;
     font-weight: 400;
 }
