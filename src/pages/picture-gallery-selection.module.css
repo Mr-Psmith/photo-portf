@@ -1,5 +1,5 @@
 .PGallerySelection_main {
-    width: 80vw;
+    width: 90vw;
     margin: 2.5vh auto;
     padding: 1vh 1vw;
     background: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)),url(../img/IMGP7571-3.jpg) no-repeat;
@@ -16,346 +16,257 @@
     /* box-shadow: 3px 3px 3px 7px rgba(17, 94, 94, 0.411); */
     box-shadow: 7px 8px 0 rgba(0, 0, 0, 0.226), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
     cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+    -webkit-tap-highlight-color: transparent;
 }
-.PGallerySelection_main div:hover {
-    /* box-shadow: 3px 3px 3px 7px rgba(17, 134, 134, 0.774); */
-}
-
-img {
-    background-size: cover;
-    height: 30vh;
-}
-img:hover {
-    transform: scale(101%);
-}
-
-.PGallerySelection__Box1 {
-    width: 26.5vw;
-    background-color: gray;
-}
-/* .PGallerySelection__Box1 img {
-    flex-basis: 10%;
-    width: 20vw;
-    background-color: gray;
+/* .PGallerySelection_main div:hover {
+    box-shadow: 3px 3px 3px 7px rgba(17, 134, 134, 0.774);
 } */
 
+.PGallerySelection_main img {
+    background-size: cover;
+    height: 30vh;
+    border-radius: 15px;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+}
+.PGallerySelection_main img:hover {
+    transform: scale(101%);
+}
+img:focus-visible {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+img:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.pictureViewersPicture {
+    box-sizing: border-box;
+    border: 5px rgba(10, 57, 57, 0.933) solid;
+    border-radius: 15px;
+}
+
+/* .PGallerySelection__Box1 {
+    width: 25vw;
+}
+
+
 .PGallerySelection__Box2 {
-    width: 34.5vw;
-    background-color: darkgrey;
-}
-.PGallerySelection__Box2 img{
-    /* width: 20vw;
-    background-color: darkgrey; */
+    width: 32vw;
+} */
+
+.PGallerySelection__Box3 {/* 6 */
+    /* width: 32rem; */
+    width: 47vh;
 }
 
-.PGallerySelection__Box3 {
-    width: 28.5vw;
-    background-color: firebrick;
-}
-.PGallerySelection__Box3 img{
-    /* width: 40vw;
-    background-color: firebrick; */
-}
-
-.PGallerySelection__Box4 {
-    width: 26.5vw;
-    background-color: salmon;
-}
-.PGallerySelection__Box4 img{
-    /* width: 30vw;
-    background-color: salmon; */
+/* .PGallerySelection__Box4 {
+    width: 25vw;
 }
 
 .PGallerySelection__Box5 {
+    width: 24vw;
+} */
+
+
+.PGallerySelection__Box6 {/* 4 */
+    width: 44vh;
+}
+
+
+.PGallerySelection__Box7 {/* 7 */
+    /* width: 30rem; */
+    width: 44vh;
+}
+
+/* .PGallerySelection__Box8 {
     width: 25vw;
-    background-color: aquamarine;
-}
-.PGallerySelection__Box5 img{
-    /* width: 27vw;
-    background-color: aquamarine;*/
-} 
-
-.PGallerySelection__Box6 {
-    width: 26.5vw;
-    background-color: wheat;
-}
-.PGallerySelection__Box6 img{
-    /* width: 33vw;
-    background-color: wheat; */
 }
 
-.PGallerySelection__Box7 {
-    width: 26.5vw;
-    background-color: goldenrod;
-}
-.PGallerySelection__Box7 img{
-    /* width: 41vw;
-    background-color: goldenrod; */
-}
-
-.PGallerySelection__Box8 {
-    width: 26.5vw;
-    background-color: tan;
-}
-.PGallerySelection__Box8 img{
-    /* width: 27vw;
-    background-color: tan; */
-}
 
 .PGallerySelection__Box9 {
-    width: 22.5vw;
-    background-color: teal;
-}
-.PGallerySelection__Box9 {
-    /* width: 31vw;
-    background-color: teal; */
+    width: 21vw;
 }
 
+
 .PGallerySelection__Box10 {
-    width: 26.5vw;
-    background-color: thistle;
-}
-.PGallerySelection__Box10 {
-    /* width: 54vw;
-    background-color: thistle; */
+    width: 25vw;
 }
 
 .PGallerySelection__Box11 {
-    width: 26.5vw;
-    background-color: tomato;
+    width: 25vw;
 }
 
 .PGallerySelection__Box12 {
-    width: 26.5vw;
-    background-color: tomato;
-}
-/* .PGallerySelection__Box12 {
-    width: 43vw;
-    background-color: tomato;
+    width: 25vw;
 } */
 
-.PGallerySelection__Box13 {
-    width: 26.5vw;
-    background-color: turquoise;
+.PGallerySelection__Box13 {/* 8 */
+    /* width: 30rem; */
+    width: 44vh;
 }
-/* .PGallerySelection__Box13 {
-    width: 32vw;
-    background-color: turquoise;
-}
- */
-.PGallerySelection__Box14 {
-    width: 26.5vw;
-    background-color: red;
-}
-/* .PGallerySelection__Box14 {
-    width: 70vw;
-    background-color: red;
-} */
 
-.PGallerySelection__Box15 {
-    width: 26.5vw;
-    background-color: chocolate;
+.PGallerySelection__Box14 {/* 9 */
+    /* width: 30rem; */
+    width: 44vh;
 }
-/* .PGallerySelection__Box15 {
-    width: 50vw;
-    background-color: chocolate;
-} */
 
-.PGallerySelection__Box16 {
-    width: 26.5vw;
-    background-color: gray;
+.PGallerySelection__Box15 {/* 10 */
+    /* width: 30rem; */
+    width: 44vh;
 }
-/* .PGallerySelection__Box16 {
-    flex-basis: 10%;
-    width: 20vw;
-    background-color: gray;
-} */
 
-.PGallerySelection__Box17 {
-    width: 26.5vw;
-    background-color: darkgrey;
+
+.PGallerySelection__Box16 { /* 1 */
+    width: 43vh;
+    /* width: 30rem; */
 }
+
+
 /* .PGallerySelection__Box17 {
-    width: 20vw;
+    width: 25vw;
     background-color: darkgrey;
-} */
-
-.PGallerySelection__Box18 {
-    width: 12vw;
-    background-color: firebrick;
-}
-/* .PGallerySelection__Box18 {
-    width: 40vw;
-    background-color: firebrick;
-} */
-
-.PGallerySelection__Box19 {
-    width: 30vw;
-    background-color: salmon;
-}
-/* .PGallerySelection__Box19 {
-    width: 30vw;
-    background-color: salmon;
-} */
-
-.PGallerySelection__Box20 {
-    width: 27vw;
-    background-color: aquamarine;
-}
-/* .PGallerySelection__Box20 {
-    width: 27vw;
-    background-color: aquamarine;
-} */
-
-.PGallerySelection__Box21 {
-    width: 33vw;
-    background-color: wheat;
-}
-/* .PGallerySelection__Box21 {
-    width: 33vw;
-    background-color: wheat;
-} */
-
-.PGallerySelection__Box22 {
-    width: 41vw;
-    background-color: goldenrod;
-}
-/* .PGallerySelection__Box22 {
-    width: 41vw;
-    background-color: goldenrod;
-} */
-
-.PGallerySelection__Box23 {
-    width: 27vw;
-    background-color: tan;
-}
-/* .PGallerySelection__Box23 {
-    width: 27vw;
-    background-color: tan;
-} */
-
-.PGallerySelection__Box24 {
-    width: 31vw;
-    background-color: teal;
-}
-/* .PGallerySelection__Box24 {
-    width: 31vw;
-    background-color: teal;
 }
  */
-.PGallerySelection__Box25 {
-    width: 54vw;
-    background-color: thistle;
+
+.PGallerySelection__Box18 {/* 2 */
+    /* width: 13rem; */
+    width: 20vh;
 }
+
+
+.PGallerySelection__Box19 {/* 3 */
+    /* width: 30rem; */
+    width: 45vh;
+}
+
+
+.PGallerySelection__Box20 {/* 11 */
+    /* width: 30rem; */
+    width: 44vh;
+}
+
+
+/* .PGallerySelection__Box21 {
+    width: 11vw;
+    background-color: wheat;
+} */
+
+
+.PGallerySelection__Box22 {/* 5 */
+    width: 72vh;
+}
+
+
+.PGallerySelection__Box23 {/* 22 */
+    /* width: 36rem; */
+    width: 53vh;
+}
+
+
+.PGallerySelection__Box24 {/* 18 */
+    /* width: 38rem; */
+    width: 57vh;
+}
+
 /* .PGallerySelection__Box25 {
-    width: 54vw;
+    width: 25vw;
     background-color: thistle;
 } */
 
-.PGallerySelection__Box26 {
-    width: 43vw;
-    background-color: tomato;
-}
-/* .PGallerySelection__Box26 {
-    width: 43vw;
-    background-color: tomato;
-} */
 
-.PGallerySelection__Box27 {
-    width: 32vw;
-    background-color: turquoise;
+.PGallerySelection__Box26 {/* 12 */
+    /* width: 30rem; */
+    width: 44vh;
 }
+
+
 /* .PGallerySelection__Box27 {
-    width: 32vw;
+    width: 25vw;
     background-color: turquoise;
 } */
 
-.PGallerySelection__Box28 {
-    width: 70vw;
-    background-color: red;
-}
-/* .PGallerySelection__Box28 {
-    width: 70vw;
-    background-color: red;
-} */
 
-.PGallerySelection__Box29 {
-    width: 50vw;
-    background-color: chocolate;
+.PGallerySelection__Box28 {/* 13 */
+    /* width: 30rem; */
+    width: 44vh;
 }
+
+
 /* .PGallerySelection__Box29 {
-    width: 50vw;
+    width: 26vw;
     background-color: chocolate;
 } */
 
-.PGallerySelection__Box30 {
-    width: 27vw;
-    background-color: aquamarine;
-}
+
 /* .PGallerySelection__Box30 {
-    width: 27vw;
+    width: 25vw;
     background-color: aquamarine;
 } */
 
-.PGallerySelection__Box31 {
-    width: 33vw;
-    background-color: wheat;
-}
-/* .PGallerySelection__Box31 {
-    width: 33vw;
-    background-color: wheat;
-} */
 
-.PGallerySelection__Box32 {
-    width: 41vw;
-    background-color: goldenrod;
+.PGallerySelection__Box31 {/* 14 */
+    /* width: 30rem; */
+    width: 44vh;
 }
-/* .PGallerySelection__Box32 {
-    width: 41vw;
-    background-color: goldenrod;
-} */
 
-.PGallerySelection__Box33 {
-    width: 27vw;
-    background-color: tan;
-}
-/* .PGallerySelection__Box33 {
-    width: 27vw;
-    background-color: tan;
-} */
 
-.PGallerySelection__Box34 {
-    width: 31vw;
-    background-color: teal;
+.PGallerySelection__Box32 {/* 15 */
+    /* width: 30rem; */
+    width: 44vh;
 }
-/* .PGallerySelection__Box34 {
-    width: 31vw;
-    background-color: teal;
-} */
 
-.PGallerySelection__Box35 {
-    width: 54vw;
-    background-color: thistle;
-}
-/* .PGallerySelection__Box35 {
-    width: 54vw;
-    background-color: thistle;
-} */
 
-.PGallerySelection__Box36 {
-    width: 43vw;
-    background-color: tomato;
+.PGallerySelection__Box33 {/* 16 */
+    /* width: 30rem; */
+    width: 44vh;
 }
-/* .PGallerySelection__Box36 {
-    width: 43vw;
-    background-color: tomato;
-} */
 
-.PGallerySelection__Box37 {
-    width: 32vw;
-    background-color: turquoise;
+
+.PGallerySelection__Box34 {/* 17 */
+    /* width: 28.5rem; */
+    width: 42vh;
 }
-/* .PGallerySelection__Box37 {
-    width: 32vw;
-    background-color: turquoise;
-} */
+
+
+.PGallerySelection__Box35 {/* 19 */
+    /* width: 32rem; */
+    width: 48vh;
+}
+
+
+.PGallerySelection__Box36 {/* 20 */
+    /* width: 31rem; */
+    width: 47vh;
+}
+
+
+.PGallerySelection__Box37 {/* 21 */
+    /* width: 31rem; */
+    width: 46vh;
+}
+
+.picture30Select__wrapper {
+    position: fixed;
+    top: 10vh;
+    left:10vh;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(240, 248, 255, 0.178);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 201;
+}
+.pictureViewersPicture {
+    /* position: fixed;
+    top: 10vh;
+    left:; */
+    margin: 0 auto;
+    max-width: 80vw;
+    /* width: 80vw; */ height: 80vh;
+    z-index: 211;
+}

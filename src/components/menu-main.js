@@ -8,7 +8,7 @@ function MenuMain () {
 return (
     <>
         <div className={classes.menu_main}>
-            <li>Best Shots</li>
+            <li>Selected Showcase</li>
             <li>About Me</li>
             <li>Contact</li>
             <li>Galleries</li>
