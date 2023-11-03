@@ -1,79 +1,361 @@
 .PGallerySelection_main {
     width: 80vw;
     margin: 2.5vh auto;
+    padding: 1vh 1vw;
     background: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)),url(../img/IMGP7571-3.jpg) no-repeat;
     background-size: cover;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .PGallerySelection_main div {
     height: 30vh;
-    margin: 1vh 1vw;
-    box-shadow: 3px 3px 3px 7px rgba(17, 94, 94, 0.411);
+    margin: 2vh 2vw;
+    /* box-shadow: 3px 3px 3px 7px rgba(17, 94, 94, 0.411); */
+    box-shadow: 7px 8px 0 rgba(0, 0, 0, 0.226), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
     cursor: pointer;
 }
 .PGallerySelection_main div:hover {
-    box-shadow: 3px 3px 3px 7px rgba(17, 134, 134, 0.774);
+    /* box-shadow: 3px 3px 3px 7px rgba(17, 134, 134, 0.774); */
+}
+
+img {
+    background-size: cover;
+    height: 30vh;
+}
+img:hover {
+    transform: scale(101%);
 }
 
 .PGallerySelection__Box1 {
+    width: 26.5vw;
+    background-color: gray;
+}
+/* .PGallerySelection__Box1 img {
     flex-basis: 10%;
     width: 20vw;
     background-color: gray;
-}
+} */
+
 .PGallerySelection__Box2 {
-    width: 20vw;
+    width: 34.5vw;
     background-color: darkgrey;
 }
+.PGallerySelection__Box2 img{
+    /* width: 20vw;
+    background-color: darkgrey; */
+}
+
 .PGallerySelection__Box3 {
-    width: 40vw;
+    width: 28.5vw;
     background-color: firebrick;
 }
+.PGallerySelection__Box3 img{
+    /* width: 40vw;
+    background-color: firebrick; */
+}
+
 .PGallerySelection__Box4 {
-    width: 30vw;
+    width: 26.5vw;
     background-color: salmon;
 }
+.PGallerySelection__Box4 img{
+    /* width: 30vw;
+    background-color: salmon; */
+}
+
 .PGallerySelection__Box5 {
-    width: 27vw;
+    width: 25vw;
     background-color: aquamarine;
 }
+.PGallerySelection__Box5 img{
+    /* width: 27vw;
+    background-color: aquamarine;*/
+} 
+
 .PGallerySelection__Box6 {
-    width: 33vw;
+    width: 26.5vw;
     background-color: wheat;
 }
+.PGallerySelection__Box6 img{
+    /* width: 33vw;
+    background-color: wheat; */
+}
+
 .PGallerySelection__Box7 {
-    width: 41vw;
+    width: 26.5vw;
     background-color: goldenrod;
 }
+.PGallerySelection__Box7 img{
+    /* width: 41vw;
+    background-color: goldenrod; */
+}
+
 .PGallerySelection__Box8 {
-    width: 27vw;
+    width: 26.5vw;
     background-color: tan;
 }
+.PGallerySelection__Box8 img{
+    /* width: 27vw;
+    background-color: tan; */
+}
+
 .PGallerySelection__Box9 {
-    width: 31vw;
+    width: 22.5vw;
     background-color: teal;
 }
+.PGallerySelection__Box9 {
+    /* width: 31vw;
+    background-color: teal; */
+}
+
 .PGallerySelection__Box10 {
-    width: 54vw;
+    width: 26.5vw;
     background-color: thistle;
 }
-.PGallerySelection__Box12 {
-    width: 43vw;
+.PGallerySelection__Box10 {
+    /* width: 54vw;
+    background-color: thistle; */
+}
+
+.PGallerySelection__Box11 {
+    width: 26.5vw;
     background-color: tomato;
 }
+
+.PGallerySelection__Box12 {
+    width: 26.5vw;
+    background-color: tomato;
+}
+/* .PGallerySelection__Box12 {
+    width: 43vw;
+    background-color: tomato;
+} */
+
 .PGallerySelection__Box13 {
+    width: 26.5vw;
+    background-color: turquoise;
+}
+/* .PGallerySelection__Box13 {
     width: 32vw;
     background-color: turquoise;
 }
+ */
 .PGallerySelection__Box14 {
+    width: 26.5vw;
+    background-color: red;
+}
+/* .PGallerySelection__Box14 {
+    width: 70vw;
+    background-color: red;
+} */
+
+.PGallerySelection__Box15 {
+    width: 26.5vw;
+    background-color: chocolate;
+}
+/* .PGallerySelection__Box15 {
+    width: 50vw;
+    background-color: chocolate;
+} */
+
+.PGallerySelection__Box16 {
+    width: 26.5vw;
+    background-color: gray;
+}
+/* .PGallerySelection__Box16 {
+    flex-basis: 10%;
+    width: 20vw;
+    background-color: gray;
+} */
+
+.PGallerySelection__Box17 {
+    width: 26.5vw;
+    background-color: darkgrey;
+}
+/* .PGallerySelection__Box17 {
+    width: 20vw;
+    background-color: darkgrey;
+} */
+
+.PGallerySelection__Box18 {
+    width: 12vw;
+    background-color: firebrick;
+}
+/* .PGallerySelection__Box18 {
+    width: 40vw;
+    background-color: firebrick;
+} */
+
+.PGallerySelection__Box19 {
+    width: 30vw;
+    background-color: salmon;
+}
+/* .PGallerySelection__Box19 {
+    width: 30vw;
+    background-color: salmon;
+} */
+
+.PGallerySelection__Box20 {
+    width: 27vw;
+    background-color: aquamarine;
+}
+/* .PGallerySelection__Box20 {
+    width: 27vw;
+    background-color: aquamarine;
+} */
+
+.PGallerySelection__Box21 {
+    width: 33vw;
+    background-color: wheat;
+}
+/* .PGallerySelection__Box21 {
+    width: 33vw;
+    background-color: wheat;
+} */
+
+.PGallerySelection__Box22 {
+    width: 41vw;
+    background-color: goldenrod;
+}
+/* .PGallerySelection__Box22 {
+    width: 41vw;
+    background-color: goldenrod;
+} */
+
+.PGallerySelection__Box23 {
+    width: 27vw;
+    background-color: tan;
+}
+/* .PGallerySelection__Box23 {
+    width: 27vw;
+    background-color: tan;
+} */
+
+.PGallerySelection__Box24 {
+    width: 31vw;
+    background-color: teal;
+}
+/* .PGallerySelection__Box24 {
+    width: 31vw;
+    background-color: teal;
+}
+ */
+.PGallerySelection__Box25 {
+    width: 54vw;
+    background-color: thistle;
+}
+/* .PGallerySelection__Box25 {
+    width: 54vw;
+    background-color: thistle;
+} */
+
+.PGallerySelection__Box26 {
+    width: 43vw;
+    background-color: tomato;
+}
+/* .PGallerySelection__Box26 {
+    width: 43vw;
+    background-color: tomato;
+} */
+
+.PGallerySelection__Box27 {
+    width: 32vw;
+    background-color: turquoise;
+}
+/* .PGallerySelection__Box27 {
+    width: 32vw;
+    background-color: turquoise;
+} */
+
+.PGallerySelection__Box28 {
     width: 70vw;
     background-color: red;
 }
-.PGallerySelection__Box15 {
+/* .PGallerySelection__Box28 {
+    width: 70vw;
+    background-color: red;
+} */
+
+.PGallerySelection__Box29 {
     width: 50vw;
     background-color: chocolate;
 }
+/* .PGallerySelection__Box29 {
+    width: 50vw;
+    background-color: chocolate;
+} */
 
+.PGallerySelection__Box30 {
+    width: 27vw;
+    background-color: aquamarine;
+}
+/* .PGallerySelection__Box30 {
+    width: 27vw;
+    background-color: aquamarine;
+} */
 
+.PGallerySelection__Box31 {
+    width: 33vw;
+    background-color: wheat;
+}
+/* .PGallerySelection__Box31 {
+    width: 33vw;
+    background-color: wheat;
+} */
+
+.PGallerySelection__Box32 {
+    width: 41vw;
+    background-color: goldenrod;
+}
+/* .PGallerySelection__Box32 {
+    width: 41vw;
+    background-color: goldenrod;
+} */
+
+.PGallerySelection__Box33 {
+    width: 27vw;
+    background-color: tan;
+}
+/* .PGallerySelection__Box33 {
+    width: 27vw;
+    background-color: tan;
+} */
+
+.PGallerySelection__Box34 {
+    width: 31vw;
+    background-color: teal;
+}
+/* .PGallerySelection__Box34 {
+    width: 31vw;
+    background-color: teal;
+} */
+
+.PGallerySelection__Box35 {
+    width: 54vw;
+    background-color: thistle;
+}
+/* .PGallerySelection__Box35 {
+    width: 54vw;
+    background-color: thistle;
+} */
+
+.PGallerySelection__Box36 {
+    width: 43vw;
+    background-color: tomato;
+}
+/* .PGallerySelection__Box36 {
+    width: 43vw;
+    background-color: tomato;
+} */
+
+.PGallerySelection__Box37 {
+    width: 32vw;
+    background-color: turquoise;
+}
+/* .PGallerySelection__Box37 {
+    width: 32vw;
+    background-color: turquoise;
+} */
