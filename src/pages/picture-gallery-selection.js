@@ -1,5 +1,6 @@
 import classes from "./picture-gallery-selection.module.css";
 import { useState } from "react";
+import "../index.css";
 
 //import pictureSelect1 from "../img/GallerySelection/IMGP0320-1.jpg";
 //import pictureSelect2 from "../img/GallerySelection/IMGP0512-1.jpg";
@@ -116,148 +117,213 @@ function PGallerySelection(props) {
         setBox36Picture(false);
         setBox37Picture(false);
         setBox23Picture(false);
+        
+        document.body.style.overflowY = "scroll";
     }
+    function wrapperCloseHandler() {
+        setBox16Picture(false);
+        setBackdrop(false);
+        setBox18Picture(false);
+        setBox19Picture(false);
+        setBox6Picture(false);
+        setBox22Picture(false);
+        setBox3Picture(false);
+        setBox7Picture(false);
+        setBox13Picture(false);
+        setBox14Picture(false);
+        setBox15Picture(false);
+        setBox20Picture(false);
+        setBox26Picture(false);
+        setBox28Picture(false);
+        setBox31Picture(false);
+        setBox32Picture(false);
+        setBox33Picture(false);
+        setBox34Picture(false);
+        setBox24Picture(false);
+        setBox35Picture(false);
+        setBox36Picture(false);
+        setBox37Picture(false);
+        setBox23Picture(false);
+        
+        document.body.style.overflowY = "scroll";
+    }
+
 
     function box16ClickHandler() {
         setBox16Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box18ClickHandler() {
         setBox18Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box19ClickHandler() {
         setBox19Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box6ClickHandler() {
         setBox6Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box22ClickHandler() {
         setBox22Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box3ClickHandler() {
         setBox3Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box7ClickHandler() {
         setBox7Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box13ClickHandler() {
         setBox13Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box14ClickHandler() {
         setBox14Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box15ClickHandler() {
         setBox15Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
+        
     }
     function box20ClickHandler() {
         setBox20Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box26ClickHandler() {
         setBox26Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box28ClickHandler() {
         setBox28Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box31ClickHandler() {
         setBox31Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box32ClickHandler() {
         setBox32Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box33ClickHandler() {
         setBox33Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box34ClickHandler() {
         setBox34Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box24ClickHandler() {
         setBox24Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box35ClickHandler() {
         setBox35Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box36ClickHandler() {
         setBox36Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box37ClickHandler() {
         setBox37Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
     function box23ClickHandler() {
         setBox23Picture(true);
         setBackdrop(true);
+        document.body.style.overflowY = "hidden";
     }
 
 
-    const box16PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box18PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select18} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box19PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box6PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box22PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box3PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select3} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box7PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select7} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box13PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select13} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box14PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select14} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box15PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select15} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box20PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select20} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box26PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select26} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box28PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select28} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box31PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select31} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box32PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select32} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box33PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select33} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box34PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select34} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box24PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select24} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box35PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box36PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box37PictureFull = <div className={classes.picture30Select__wrapper}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box23PictureFull =  <div className={classes.picture30Select__wrapper}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div>;
+    function pictureSwitchHandlerLeft() {
+
+    }
+
+    function pictureSwitchHandlerRight() {
+
+    }
+
+
+    const box16PictureFull = <div><div className={classes.picture30Select__wrapper} /* onClick={wrapperCloseHandler}*/ onClick={pictureSwitchHandlerLeft}></div><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img><div onClick={pictureSwitchHandlerRight}></div></div>;
+    const box18PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={classes.pictureViewersPicture__Speshul18}></img></div>;
+    const box19PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box6PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box22PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box3PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select3} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box7PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select7} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box13PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select13} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box14PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select14} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box15PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select15} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box20PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select20} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box26PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select26} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box28PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select28} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box31PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select31} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box32PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select32} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box33PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select33} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box34PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select34} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box24PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select24} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box35PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box36PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box37PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box23PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div>;
     return (
         <>
-            <div className={classes.pictureViewer}>
-                {box16Picture ? box16PictureFull : ""}
-                {box18Picture ? box18PictureFull : ""}
-                {box19Picture ? box19PictureFull : ""}
-                {box6Picture ? box6PictureFull : ""}
-                {box22Picture ? box22PictureFull : ""}
-                {box3Picture ? box3PictureFull : ""}
-                {box7Picture ? box7PictureFull : ""}
-                {box13Picture ? box13PictureFull : ""}
-                {box14Picture ? box14PictureFull : ""}
-                {box15Picture ? box15PictureFull : ""}
-                {box20Picture ? box20PictureFull : ""}
-                {box26Picture ? box26PictureFull : ""}
-                {box28Picture ? box28PictureFull : ""}
-                {box31Picture ? box31PictureFull : ""}
-                {box32Picture ? box32PictureFull : ""}
-                {box33Picture ? box33PictureFull : ""}
-                {box34Picture ? box34PictureFull : ""}
-                {box24Picture ? box24PictureFull : ""}
-                {box35Picture ? box35PictureFull : ""}
-                {box36Picture ? box36PictureFull : ""}
-                {box37Picture ? box37PictureFull : ""}
-                {box23Picture ? box23PictureFull : ""}
+            {box16Picture ? box16PictureFull : ""}
+            {box18Picture ? box18PictureFull : ""}
+            {box19Picture ? box19PictureFull : ""}
+            {box6Picture ? box6PictureFull : ""}
+            {box22Picture ? box22PictureFull : ""}
+            {box3Picture ? box3PictureFull : ""}
+            {box7Picture ? box7PictureFull : ""}
+            {box13Picture ? box13PictureFull : ""}
+            {box14Picture ? box14PictureFull : ""}
+            {box15Picture ? box15PictureFull : ""}
+            {box20Picture ? box20PictureFull : ""}
+            {box26Picture ? box26PictureFull : ""}
+            {box28Picture ? box28PictureFull : ""}
+            {box31Picture ? box31PictureFull : ""}
+            {box32Picture ? box32PictureFull : ""}
+            {box33Picture ? box33PictureFull : ""}
+            {box34Picture ? box34PictureFull : ""}
+            {box24Picture ? box24PictureFull : ""}
+            {box35Picture ? box35PictureFull : ""}
+            {box36Picture ? box36PictureFull : ""}
+            {box37Picture ? box37PictureFull : ""}
+            {box23Picture ? box23PictureFull : ""}
 
-                {backdrop ? <Backdrop PrbackdropHandler={backdropHandler} /> : ""}
+            {backdrop ? <Backdrop PrbackdropHandler={backdropHandler} /> : ""}
+
+            <div>
+
             </div>
+
             <div className={classes.PGallerySelection_main}>
 
                 <div className={classes.PGallerySelection__Box16}>
