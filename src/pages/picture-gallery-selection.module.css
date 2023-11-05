@@ -42,10 +42,50 @@ img:active {
     -webkit-tap-highlight-color: transparent;
 }
 
+.pictureSwitchRight img,
+.pictureSwitchLeft img {
+    position: fixed;
+    height: 70vh;
+    top: 15vh;
+    cursor: pointer;
+    /* box-sizing: border-box; border: 5px red solid; */
+}
+.pictureSwitchRight img:hover,
+.pictureSwitchLeft img:hover {
+    transform: scale(103%);
+}
+.pictureSwitchRight {
+    position: fixed;
+    top: 45vh;
+    right: 10vw;
+    width: 10vw;
+    height: 10vh;
+    z-index: 221;
+    background-color: transparent;
+    /* border: 5px red solid; */
+}
+
+.pictureSwitchRight img {
+    right: 1vw;
+}
+.pictureSwitchLeft {
+    position: fixed;
+    top: 45vh;
+    left: 10vw;
+    width: 10vw;
+    height: 10vh;
+    background-size: cover;
+    z-index: 221;
+    background-color: transparent;
+    /* border: 5px red solid; */
+}
+.pictureSwitchLeft img {
+    left: 1vw;
+}
 .picture30Select__wrapper {
     position: fixed;
     top: 10vh;
-    left:0vh;
+    left: 0vw;
     height: 80vh;
     width: 100vw;
     margin: 0 auto;
