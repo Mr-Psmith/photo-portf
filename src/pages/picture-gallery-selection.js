@@ -264,18 +264,54 @@ function PGallerySelection(props) {
         document.body.style.overflowY = "hidden";
     }
 
+    //PictureSlide:
 
-    function pictureSwitchHandlerLeft() {
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
+    function pictureSwitchHandler(n) {
+        showSlides(slideIndex += n);
     }
 
-    function pictureSwitchHandlerRight() {
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("pictureViewersPicture");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";  
+      }
 
-    }
 
+      
 
-    const box16PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandlerLeft}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandlerRight}></img></div></div>;
-    const box18PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={classes.pictureViewersPicture__Speshul18}></img></div>;
+    const box16PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box18PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={`${classes.pictureViewersPicture__Speshul18} ${classes.pictureViewersPicture}`}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box19PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box6PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box22PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box3PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select3} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box7PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select7} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box13PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select13} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box14PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select14} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box15PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select15} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box20PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select20} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box26PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select26} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box28PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select28} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box31PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select31} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box32PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select32} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box33PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select33} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box34PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select34} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box24PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select24} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box35PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box36PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box37PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    const box23PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    
+    
+    /* const box18PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={classes.pictureViewersPicture__Speshul18}></img></div>;
     const box19PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box6PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box22PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></div>;
@@ -295,7 +331,8 @@ function PGallerySelection(props) {
     const box35PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box36PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box37PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box23PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div>;
+    const box23PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div>; */
+    
     return (
         <>
             <div></div>

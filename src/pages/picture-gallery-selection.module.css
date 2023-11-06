@@ -108,13 +108,9 @@ img:active {
     border-radius: 15px;
 }
 .pictureViewersPicture__Speshul18 {
-    max-width: 80vw ;
-    margin: 0 auto;
-    height: 90vh;
-    z-index: 211;
-    box-sizing: border-box;
-    border: 5px rgba(10, 57, 57, 0.933) solid;
-    border-radius: 15px;
+    max-width: 80vw;
+    /* height: 90vh; */
+    width: 33vw;
 }
 
 /* .PGallerySelection__Box1 {
