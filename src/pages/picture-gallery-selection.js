@@ -40,7 +40,7 @@ import pictureSelect35 from "../img/GallerySelection/IMGP6901.jpg";
 import pictureSelect36 from "../img/GallerySelection/IMGP7352.jpg";
 import pictureSelect37 from "../img/GallerySelection/IMGP7655.jpg";
 
-import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
+/* import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
 import picture30Select3 from "../img/picsResized30/IMGP2106-1.jpg";
 import picture30Select13 from "../img/picsResized30/IMGP1651-WP.jpg";
 import picture30Select14 from "../img/picsResized30/IMGP1781-1.jpg";
@@ -61,12 +61,13 @@ import picture30Select33 from "../img/picsResized30/IMGP6593.jpg";
 import picture30Select34 from "../img/picsResized30/IMGP6894.jpg";
 import picture30Select35 from "../img/picsResized30/IMGP6901.jpg";
 import picture30Select36 from "../img/picsResized30/IMGP7352.jpg";
-import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
+import picture30Select37 from "../img/picsResized30/IMGP7655.jpg"; */
 
 import arrowRightWhite from "../img/arrow-vector-white-right-4200px.png";
 import arrowLeftWhite from "../img/arrow-vector-white-left-4200px.png";
 
 import Backdrop from "../utility/backdrop";
+import ImageSlider from "../utility/image-slider";
 
 
 
@@ -121,7 +122,7 @@ function PGallerySelection(props) {
         setBox36Picture(false);
         setBox37Picture(false);
         setBox23Picture(false);
-        
+
         document.body.style.overflowY = "scroll";
     }
     function wrapperCloseHandler() {
@@ -148,13 +149,14 @@ function PGallerySelection(props) {
         setBox36Picture(false);
         setBox37Picture(false);
         setBox23Picture(false);
-        
+
         document.body.style.overflowY = "scroll";
     }
 
 
     function box16ClickHandler() {
-        setBox16Picture(true);
+        <ImageSlider slides={"1"} />
+        /* setBox16Picture(true); */
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
@@ -264,30 +266,10 @@ function PGallerySelection(props) {
         document.body.style.overflowY = "hidden";
     }
 
-    //PictureSlide:
-
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function pictureSwitchHandler(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("pictureViewersPicture");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex-1].style.display = "block";  
-      }
 
 
-      
 
-    const box16PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
+    /* const box16PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
     const box18PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={`${classes.pictureViewersPicture__Speshul18} ${classes.pictureViewersPicture}`}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
     const box19PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
     const box6PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
@@ -308,9 +290,9 @@ function PGallerySelection(props) {
     const box35PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
     const box36PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
     const box37PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box23PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    
-    
+    const box23PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>; */
+
+
     /* const box18PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={classes.pictureViewersPicture__Speshul18}></img></div>;
     const box19PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box6PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div>;
@@ -332,12 +314,12 @@ function PGallerySelection(props) {
     const box36PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box37PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div>;
     const box23PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div>; */
-    
+
     return (
         <>
             <div></div>
 
-            {box16Picture ? box16PictureFull : ""}
+            {/* {box16Picture ? box16PictureFull : ""}
             {box18Picture ? box18PictureFull : ""}
             {box19Picture ? box19PictureFull : ""}
             {box6Picture ? box6PictureFull : ""}
@@ -358,9 +340,11 @@ function PGallerySelection(props) {
             {box35Picture ? box35PictureFull : ""}
             {box36Picture ? box36PictureFull : ""}
             {box37Picture ? box37PictureFull : ""}
-            {box23Picture ? box23PictureFull : ""}
+            {box23Picture ? box23PictureFull : ""} */}
 
             {backdrop ? <Backdrop PrbackdropHandler={backdropHandler} /> : ""}
+
+            
 
             <div>
 

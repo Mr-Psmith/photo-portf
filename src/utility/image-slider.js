@@ -1,29 +1,141 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import classes from "./image-slider.css";
+import arrowRightWhite from "../img/arrow-vector-white-right-4200px.png";
+import arrowLeftWhite from "../img/arrow-vector-white-left-4200px.png";
 
-const ImageSlider = ({ images }) => { // takes in images as props
-  const [index, setIndex] = useState(0); // create state to keep track of images index, set the default index to 0
+import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
+import picture30Select3 from "../img/picsResized30/IMGP2106-1.jpg";
+import picture30Select13 from "../img/picsResized30/IMGP1651-WP.jpg";
+import picture30Select14 from "../img/picsResized30/IMGP1781-1.jpg";
+import picture30Select15 from "../img/picsResized30/IMGP1880-1-4.jpg";
+import picture30Select16 from "../img/picsResized30/IMGP2030-1-3.jpg";
+import picture30Select18 from "../img/picsResized30/IMGP2346-1.jpg";
+import picture30Select19 from "../img/picsResized30/IMGP2413-1-2.jpg";
+import picture30Select20 from "../img/picsResized30/IMGP2447-1.jpg";
+import picture30Select22 from "../img/picsResized30/IMGP2694-1.jpg";
+import picture30Select23 from "../img/picsResized30/IMGP2986-1-2.jpg";
+import picture30Select24 from "../img/picsResized30/IMGP3055-1-3.jpg";
+import picture30Select26 from "../img/picsResized30/IMGP3144-1.jpg";
+import picture30Select6 from "../img/picsResized30/IMGP0734.jpg";
+import picture30Select28 from "../img/picsResized30/IMGP3248-1.jpg";
+import picture30Select31 from "../img/picsResized30/IMGP3608-1.jpg";
+import picture30Select32 from "../img/picsResized30/IMGP3835-1-3.jpg";
+import picture30Select33 from "../img/picsResized30/IMGP6593.jpg";
+import picture30Select34 from "../img/picsResized30/IMGP6894.jpg";
+import picture30Select35 from "../img/picsResized30/IMGP6901.jpg";
+import picture30Select36 from "../img/picsResized30/IMGP7352.jpg";
+import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
+import Backdrop from './backdrop';
 
-  const slideRight = () => {
-    setIndex((index + 1) % images.length); // increases index by 1
+const sliderData = [
+  {
+    image: picture30Select7
+  },
+  {
+    image: picture30Select3
+  },
+  {
+    image: picture30Select13
+  },
+  {
+    image: picture30Select14
+  },
+  {
+    image: picture30Select15
+  },
+  {
+    image: picture30Select16
+  },
+  {
+    image: picture30Select18
+  },
+  {
+    image: picture30Select19
+  },
+  {
+    image: picture30Select20
+  },
+  {
+    image: picture30Select22
+  },
+  {
+    image: picture30Select23
+  },
+  {
+    image: picture30Select24
+  },
+  {
+    image: picture30Select26
+  },
+  {
+    image: picture30Select6
+  },
+  {
+    image: picture30Select28
+  },
+  {
+    image: picture30Select31
+  },
+  {
+    image: picture30Select32
+  },
+  {
+    image: picture30Select33
+  },
+  {
+    image: picture30Select34
+  },
+  {
+    image: picture30Select35
+  },
+  {
+    image: picture30Select36
+  },
+  {
+    image: picture30Select37
+  },
+]
+
+const ImageSlider = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const length = sliderData.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
-  const slideLeft = () => {
-    const nextIndex = index - 1;
-    if (nextIndex < 0) {
-      setIndex(images.length - 1); // returns last index of images array if index is less than 0
-    } else {
-      setIndex(nextIndex);
-    }
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  if (slides === "1") {
+    setCurrent(current + 1);
+  }
+
+  /*  if (!Array.isArray(slides) || slides.length <= 0) {
+     return null;
+   } */
 
   return (
-    images.length > 0 && (
-      <div>
-        <button onClick={slideLeft}>{"<"}</button>
-        <img src={images[index]} alt={index} />
-        <button onClick={slideRight}>{">"}</button>
-      </div>
-    )
+    <>
+      {/* <Backdrop /> */}
+      <section className='slider'>
+        <img src={arrowLeftWhite} className='left-arrow' onClick={prevSlide} />
+        <img src={arrowRightWhite} className='right-arrow' onClick={nextSlide} />
+        {sliderData.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? 'slide active' : 'slide'}
+              key={index}
+            >
+              {index === current && (
+                <img src={slide.image} alt='travel image' className='image' />
+              )}
+            </div>
+          );
+        })}
+      </section>
+    </>
   );
 };
 

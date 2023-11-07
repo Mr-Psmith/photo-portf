@@ -54,7 +54,7 @@ img:active {
 .pictureSwitchLeft img:hover {
     transform: scale(103%);
 }
-.pictureSwitchRight {
+/* .pictureSwitchRight {
     position: fixed;
     top: 45vh;
     right: 10vw;
@@ -62,7 +62,6 @@ img:active {
     height: 10vh;
     z-index: 221;
     background-color: transparent;
-    /* border: 5px red solid; */
 }
 
 .pictureSwitchRight img {
@@ -77,26 +76,24 @@ img:active {
     background-size: cover;
     z-index: 221;
     background-color: transparent;
-    /* border: 5px red solid; */
 }
 .pictureSwitchLeft img {
     left: 1vw;
-}
-.picture30Select__wrapper {
+} */
+/* .picture30Select__wrapper {
     position: fixed;
     top: 10vh;
     left: 0vw;
     height: 80vh;
     width: 100vw;
     margin: 0 auto;
-    /* background-color: rgba(240, 248, 255, 0.178); */
     background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 201;
-}
+} */
 
 .pictureViewersPicture {
     margin: 0 auto;
