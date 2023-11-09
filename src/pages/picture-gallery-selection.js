@@ -104,7 +104,7 @@ function PGallerySelection(props) {
 
     function backdropHandler() {
 
-        setTimeout(() => {
+        /* setTimeout(() => { */
             setCloseX(false);
             setSlider(false);
             setBackdrop(false);
@@ -130,13 +130,13 @@ function PGallerySelection(props) {
             setBox36Picture(false);
             setBox37Picture(false);
             setBox23Picture(false);
-        }, 2000);
+        /* }, 2000); */
 
 
         document.body.style.overflowY = "scroll";
     }
     function wrapperCloseHandler() {
-        setTimeout(() => {
+        /* setTimeout(() => { */
             setSlider(false);
             setBackdrop(false);
             setCloseX(false);
@@ -162,7 +162,7 @@ function PGallerySelection(props) {
             setBox36Picture(false);
             setBox37Picture(false);
             setBox23Picture(false);
-        }, 2000);
+        /* }, 2000); */
 
 
         document.body.style.overflowY = "scroll";
@@ -170,7 +170,7 @@ function PGallerySelection(props) {
 
     function closeAllHandler() {
 
-        setTimeout(() => {
+        /* setTimeout(() => { */
             setSlider(false);
             setBackdrop(false);
             setCloseX(false);
@@ -196,7 +196,7 @@ function PGallerySelection(props) {
             setBox36Picture(false);
             setBox37Picture(false);
             setBox23Picture(false);
-        }, 2000);
+        /* }, 2000); */
         document.body.style.overflowY = "scroll";
     }
 
@@ -337,31 +337,28 @@ function PGallerySelection(props) {
     function pictureSwitchHandler() {
         setSlider(true);
         setCloseX(true);
-        setTimeout(() => {
-            setBox16Picture(false);
-            setBox18Picture(false);
-            setBox19Picture(false);
-            setBox6Picture(false);
-            setBox22Picture(false);
-            setBox3Picture(false);
-            setBox7Picture(false);
-            setBox13Picture(false);
-            setBox14Picture(false);
-            setBox15Picture(false);
-            setBox20Picture(false);
-            setBox26Picture(false);
-            setBox28Picture(false);
-            setBox31Picture(false);
-            setBox32Picture(false);
-            setBox33Picture(false);
-            setBox34Picture(false);
-            setBox24Picture(false);
-            setBox35Picture(false);
-            setBox36Picture(false);
-            setBox37Picture(false);
-            setBox23Picture(false);
-        }, 2000);
-
+        setBox16Picture(false);
+        setBox18Picture(false);
+        setBox19Picture(false);
+        setBox6Picture(false);
+        setBox22Picture(false);
+        setBox3Picture(false);
+        setBox7Picture(false);
+        setBox13Picture(false);
+        setBox14Picture(false);
+        setBox15Picture(false);
+        setBox20Picture(false);
+        setBox26Picture(false);
+        setBox28Picture(false);
+        setBox31Picture(false);
+        setBox32Picture(false);
+        setBox33Picture(false);
+        setBox34Picture(false);
+        setBox24Picture(false);
+        setBox35Picture(false);
+        setBox36Picture(false);
+        setBox37Picture(false);
+        setBox23Picture(false);
     }
 
 
