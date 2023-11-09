@@ -1,0 +1,18 @@
+.pictureSwitchLeft {
+    position: fixed;
+    left: 0.5vw;
+    top: 46vh;
+    border-radius: 70px;
+    width: 7vw;
+    border: 5px solid rgba(24, 158, 158, 0.933);
+    height: 7vh;
+    padding: 0.5vh 0.5vw;
+    background-size: cover;
+    z-index: 221;
+    background-color: transparent;
+    cursor: pointer;
+}
+.pictureSwitchLeft:hover {
+    /* transform: scale(103%); */
+    background-color: rgba(5.1, 23.5, 23.5, 0.933);
+}

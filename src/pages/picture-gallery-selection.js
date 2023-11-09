@@ -1,6 +1,7 @@
 import classes from "./picture-gallery-selection.module.css";
 import { useState } from "react";
 import "../index.css";
+import { motion } from "framer-motion";
 
 //import pictureSelect1 from "../img/GallerySelection/IMGP0320-1.jpg";
 //import pictureSelect2 from "../img/GallerySelection/IMGP0512-1.jpg";
@@ -40,7 +41,7 @@ import pictureSelect35 from "../img/GallerySelection/IMGP6901.jpg";
 import pictureSelect36 from "../img/GallerySelection/IMGP7352.jpg";
 import pictureSelect37 from "../img/GallerySelection/IMGP7655.jpg";
 
-/* import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
+import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
 import picture30Select3 from "../img/picsResized30/IMGP2106-1.jpg";
 import picture30Select13 from "../img/picsResized30/IMGP1651-WP.jpg";
 import picture30Select14 from "../img/picsResized30/IMGP1781-1.jpg";
@@ -61,19 +62,22 @@ import picture30Select33 from "../img/picsResized30/IMGP6593.jpg";
 import picture30Select34 from "../img/picsResized30/IMGP6894.jpg";
 import picture30Select35 from "../img/picsResized30/IMGP6901.jpg";
 import picture30Select36 from "../img/picsResized30/IMGP7352.jpg";
-import picture30Select37 from "../img/picsResized30/IMGP7655.jpg"; */
+import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
 
-import arrowRightWhite from "../img/arrow-vector-white-right-4200px.png";
-import arrowLeftWhite from "../img/arrow-vector-white-left-4200px.png";
 
 import Backdrop from "../utility/backdrop";
 import ImageSlider from "../utility/image-slider";
+import Close from "../utility/close-x";
+import { AnimatePresence } from "framer-motion";
+import ArrowRight from "../utility/arrow-right";
+import ArrowLeft from "../utility/arrow-left";
 
 
 
 function PGallerySelection(props) {
 
-
+    const [slider, setSlider] = useState(false);
+    const [closeX, setCloseX] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
     const [box16Picture, setBox16Picture] = useState(false);
     const [box18Picture, setBox18Picture] = useState(false);
@@ -99,227 +103,297 @@ function PGallerySelection(props) {
     const [box23Picture, setBox23Picture] = useState(false);
 
     function backdropHandler() {
-        setBox16Picture(false);
-        setBackdrop(false);
-        setBox18Picture(false);
-        setBox19Picture(false);
-        setBox6Picture(false);
-        setBox22Picture(false);
-        setBox3Picture(false);
-        setBox7Picture(false);
-        setBox13Picture(false);
-        setBox14Picture(false);
-        setBox15Picture(false);
-        setBox20Picture(false);
-        setBox26Picture(false);
-        setBox28Picture(false);
-        setBox31Picture(false);
-        setBox32Picture(false);
-        setBox33Picture(false);
-        setBox34Picture(false);
-        setBox24Picture(false);
-        setBox35Picture(false);
-        setBox36Picture(false);
-        setBox37Picture(false);
-        setBox23Picture(false);
+
+        setTimeout(() => {
+            setCloseX(false);
+            setSlider(false);
+            setBackdrop(false);
+            setBox16Picture(false);
+            setBox18Picture(false);
+            setBox19Picture(false);
+            setBox6Picture(false);
+            setBox22Picture(false);
+            setBox3Picture(false);
+            setBox7Picture(false);
+            setBox13Picture(false);
+            setBox14Picture(false);
+            setBox15Picture(false);
+            setBox20Picture(false);
+            setBox26Picture(false);
+            setBox28Picture(false);
+            setBox31Picture(false);
+            setBox32Picture(false);
+            setBox33Picture(false);
+            setBox34Picture(false);
+            setBox24Picture(false);
+            setBox35Picture(false);
+            setBox36Picture(false);
+            setBox37Picture(false);
+            setBox23Picture(false);
+        }, 2000);
+
 
         document.body.style.overflowY = "scroll";
     }
     function wrapperCloseHandler() {
-        setBox16Picture(false);
-        setBackdrop(false);
-        setBox18Picture(false);
-        setBox19Picture(false);
-        setBox6Picture(false);
-        setBox22Picture(false);
-        setBox3Picture(false);
-        setBox7Picture(false);
-        setBox13Picture(false);
-        setBox14Picture(false);
-        setBox15Picture(false);
-        setBox20Picture(false);
-        setBox26Picture(false);
-        setBox28Picture(false);
-        setBox31Picture(false);
-        setBox32Picture(false);
-        setBox33Picture(false);
-        setBox34Picture(false);
-        setBox24Picture(false);
-        setBox35Picture(false);
-        setBox36Picture(false);
-        setBox37Picture(false);
-        setBox23Picture(false);
+        setTimeout(() => {
+            setSlider(false);
+            setBackdrop(false);
+            setCloseX(false);
+            setBox16Picture(false);
+            setBox18Picture(false);
+            setBox19Picture(false);
+            setBox6Picture(false);
+            setBox22Picture(false);
+            setBox3Picture(false);
+            setBox7Picture(false);
+            setBox13Picture(false);
+            setBox14Picture(false);
+            setBox15Picture(false);
+            setBox20Picture(false);
+            setBox26Picture(false);
+            setBox28Picture(false);
+            setBox31Picture(false);
+            setBox32Picture(false);
+            setBox33Picture(false);
+            setBox34Picture(false);
+            setBox24Picture(false);
+            setBox35Picture(false);
+            setBox36Picture(false);
+            setBox37Picture(false);
+            setBox23Picture(false);
+        }, 2000);
 
+
+        document.body.style.overflowY = "scroll";
+    }
+
+    function closeAllHandler() {
+
+        setTimeout(() => {
+            setSlider(false);
+            setBackdrop(false);
+            setCloseX(false);
+            setBox16Picture(false);
+            setBox18Picture(false);
+            setBox19Picture(false);
+            setBox6Picture(false);
+            setBox22Picture(false);
+            setBox3Picture(false);
+            setBox7Picture(false);
+            setBox13Picture(false);
+            setBox14Picture(false);
+            setBox15Picture(false);
+            setBox20Picture(false);
+            setBox26Picture(false);
+            setBox28Picture(false);
+            setBox31Picture(false);
+            setBox32Picture(false);
+            setBox33Picture(false);
+            setBox34Picture(false);
+            setBox24Picture(false);
+            setBox35Picture(false);
+            setBox36Picture(false);
+            setBox37Picture(false);
+            setBox23Picture(false);
+        }, 2000);
         document.body.style.overflowY = "scroll";
     }
 
 
     function box16ClickHandler() {
-        <ImageSlider slides={"1"} />
-        /* setBox16Picture(true); */
+        setCloseX(true);
+        setBox16Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box18ClickHandler() {
+        setCloseX(true);
         setBox18Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box19ClickHandler() {
+        setCloseX(true);
         setBox19Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box6ClickHandler() {
+        setCloseX(true);
         setBox6Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box22ClickHandler() {
+        setCloseX(true);
         setBox22Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box3ClickHandler() {
+        setCloseX(true);
         setBox3Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box7ClickHandler() {
+        setCloseX(true);
         setBox7Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box13ClickHandler() {
+        setCloseX(true);
         setBox13Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box14ClickHandler() {
+        setCloseX(true);
         setBox14Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box15ClickHandler() {
+        setCloseX(true);
         setBox15Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box20ClickHandler() {
+        setCloseX(true);
         setBox20Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box26ClickHandler() {
+        setCloseX(true);
         setBox26Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box28ClickHandler() {
+        setCloseX(true);
         setBox28Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box31ClickHandler() {
+        setCloseX(true);
         setBox31Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box32ClickHandler() {
+        setCloseX(true);
         setBox32Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box33ClickHandler() {
+        setCloseX(true);
         setBox33Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box34ClickHandler() {
+        setCloseX(true);
         setBox34Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box24ClickHandler() {
+        setCloseX(true);
         setBox24Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box35ClickHandler() {
+        setCloseX(true);
         setBox35Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box36ClickHandler() {
+        setCloseX(true);
         setBox36Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box37ClickHandler() {
+        setCloseX(true);
         setBox37Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
     function box23ClickHandler() {
+        setCloseX(true);
         setBox23Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
 
+    function pictureSwitchHandler() {
+        setSlider(true);
+        setCloseX(true);
+        setTimeout(() => {
+            setBox16Picture(false);
+            setBox18Picture(false);
+            setBox19Picture(false);
+            setBox6Picture(false);
+            setBox22Picture(false);
+            setBox3Picture(false);
+            setBox7Picture(false);
+            setBox13Picture(false);
+            setBox14Picture(false);
+            setBox15Picture(false);
+            setBox20Picture(false);
+            setBox26Picture(false);
+            setBox28Picture(false);
+            setBox31Picture(false);
+            setBox32Picture(false);
+            setBox33Picture(false);
+            setBox34Picture(false);
+            setBox24Picture(false);
+            setBox35Picture(false);
+            setBox36Picture(false);
+            setBox37Picture(false);
+            setBox23Picture(false);
+        }, 2000);
+
+    }
 
 
 
-    /* const box16PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box18PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={`${classes.pictureViewersPicture__Speshul18} ${classes.pictureViewersPicture}`}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box19PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box6PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box22PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box3PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select3} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box7PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select7} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box13PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select13} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box14PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select14} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box15PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select15} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box20PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select20} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box26PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select26} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box28PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select28} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box31PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select31} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box32PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select32} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box33PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select33} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box34PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select34} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box24PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select24} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box35PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box36PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box37PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>;
-    const box23PictureFull = <div><div className={classes.pictureSwitchLeft}><img src={arrowLeftWhite} alt="" onClick={pictureSwitchHandler(-1)}></img></div><div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div><div className={classes.pictureSwitchRight}><img src={arrowRightWhite} alt="" onClick={pictureSwitchHandler(1)}></img></div></div>; */
+    const box16PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box16Picture ? "120%" : 0, opacity: box16Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler} ><img src={picture30Select16} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box18PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box18Picture ? "120%" : 0, opacity: box18Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={`${classes.pictureViewersPicture__Speshul18} ${classes.pictureViewersPicture}`}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box19PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box19Picture ? "120%" : 0, opacity: box19Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box6PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box6Picture ? "120%" : 0, opacity: box6Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box22PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box22Picture ? "120%" : 0, opacity: box22Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box3PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box3Picture ? "120%" : 0, opacity: box3Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select3} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box7PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box7Picture ? "120%" : 0, opacity: box7Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select7} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box13PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box13Picture ? "120%" : 0, opacity: box13Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select13} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box14PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box14Picture ? "120%" : 0, opacity: box14Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select14} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box15PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box15Picture ? "120%" : 0, opacity: box15Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select15} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box20PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box20Picture ? "120%" : 0, opacity: box20Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select20} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box26PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box26Picture ? "120%" : 0, opacity: box26Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select26} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box28PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box28Picture ? "120%" : 0, opacity: box28Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select28} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box31PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box31Picture ? "120%" : 0, opacity: box31Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select31} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box32PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box32Picture ? "120%" : 0, opacity: box32Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select32} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box33PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box33Picture ? "120%" : 0, opacity: box33Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select33} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box34PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box34Picture ? "120%" : 0, opacity: box34Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select34} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box24PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box24Picture ? "120%" : 0, opacity: box24Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select24} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box35PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box35Picture ? "120%" : 0, opacity: box35Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box36PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box36Picture ? "120%" : 0, opacity: box36Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box37PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box37Picture ? "120%" : 0, opacity: box37Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
+    const box23PictureFull = <div><AnimatePresence><ArrowLeft pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence><motion.div animate={{ y: box23Picture ? "120%" : 0, opacity: box23Picture ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></motion.div><AnimatePresence><ArrowRight pictureSwitchHandlerPr={pictureSwitchHandler} /></AnimatePresence></div>;
 
-
-    /* const box18PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select18} alt="" className={classes.pictureViewersPicture__Speshul18}></img></div>;
-    const box19PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select19} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box6PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select6} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box22PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select22} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box3PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select3} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box7PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select7} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box13PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select13} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box14PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select14} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box15PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select15} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box20PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select20} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box26PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select26} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box28PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select28} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box31PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select31} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box32PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select32} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box33PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select33} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box34PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select34} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box24PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select24} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box35PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select35} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box36PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select36} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box37PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select37} alt="" className={classes.pictureViewersPicture}></img></div>;
-    const box23PictureFull = <div className={classes.picture30Select__wrapper} onClick={wrapperCloseHandler}><img src={picture30Select23} alt="" className={classes.pictureViewersPicture}></img></div>; */
 
     return (
         <>
-            <div></div>
 
-            {/* {box16Picture ? box16PictureFull : ""}
+            {box16Picture ? box16PictureFull : ""}
             {box18Picture ? box18PictureFull : ""}
             {box19Picture ? box19PictureFull : ""}
             {box6Picture ? box6PictureFull : ""}
@@ -340,15 +414,13 @@ function PGallerySelection(props) {
             {box35Picture ? box35PictureFull : ""}
             {box36Picture ? box36PictureFull : ""}
             {box37Picture ? box37PictureFull : ""}
-            {box23Picture ? box23PictureFull : ""} */}
+            {box23Picture ? box23PictureFull : ""}
 
-            {backdrop ? <Backdrop PrbackdropHandler={backdropHandler} /> : ""}
+            {backdrop ? <AnimatePresence><Backdrop PrbackdropHandler={backdropHandler} /></AnimatePresence> : ""}
+            {slider ? <AnimatePresence><ImageSlider /></AnimatePresence> : ""}
+            {closeX ? <AnimatePresence ><Close closeAllHandlerPr={closeAllHandler} /></AnimatePresence> : ""}
 
-            
 
-            <div>
-
-            </div>
 
             <div className={classes.PGallerySelection_main}>
 

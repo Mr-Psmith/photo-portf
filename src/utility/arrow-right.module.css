@@ -1,0 +1,17 @@
+.pictureSwitchRight {
+    position: fixed;
+    top: 46vh;
+    right: 0.5vw;
+    width: 7vw;
+    border: 5px solid rgba(24, 158, 158, 0.933);
+    height: 7vh;
+    padding: 0.5vh 0.5vw;
+    border-radius: 70px;
+    z-index: 221;
+    background-color: transparent;
+    cursor: pointer;
+}
+.pictureSwitchRight:hover {
+    /* transform: scale(103%); */
+    background-color: rgba(5.1, 23.5, 23.5, 0.933);
+}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import classes from "./image-slider.css";
-import arrowRightWhite from "../img/arrow-vector-white-right-4200px.png";
-import arrowLeftWhite from "../img/arrow-vector-white-left-4200px.png";
+import "./image-slider.css";
+import arrowRightWhite from "../img/arrow-vector-white-right1400px.png";
+import arrowLeftWhite from "../img/arrow-vector-white-left1400px.png";
+import { motion } from "framer-motion";
 
 import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
 import picture30Select3 from "../img/picsResized30/IMGP2106-1.jpg";
@@ -9,7 +10,7 @@ import picture30Select13 from "../img/picsResized30/IMGP1651-WP.jpg";
 import picture30Select14 from "../img/picsResized30/IMGP1781-1.jpg";
 import picture30Select15 from "../img/picsResized30/IMGP1880-1-4.jpg";
 import picture30Select16 from "../img/picsResized30/IMGP2030-1-3.jpg";
-import picture30Select18 from "../img/picsResized30/IMGP2346-1.jpg";
+/* import picture30Select18 from "../img/picsResized30/IMGP2346-1.jpg"; */
 import picture30Select19 from "../img/picsResized30/IMGP2413-1-2.jpg";
 import picture30Select20 from "../img/picsResized30/IMGP2447-1.jpg";
 import picture30Select22 from "../img/picsResized30/IMGP2694-1.jpg";
@@ -25,7 +26,7 @@ import picture30Select34 from "../img/picsResized30/IMGP6894.jpg";
 import picture30Select35 from "../img/picsResized30/IMGP6901.jpg";
 import picture30Select36 from "../img/picsResized30/IMGP7352.jpg";
 import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
-import Backdrop from './backdrop';
+//import Backdrop from './backdrop';
 
 const sliderData = [
   {
@@ -46,9 +47,9 @@ const sliderData = [
   {
     image: picture30Select16
   },
-  {
+  /* {
     image: picture30Select18
-  },
+  }, */
   {
     image: picture30Select19
   },
@@ -119,19 +120,19 @@ const ImageSlider = ({ slides }) => {
   return (
     <>
       {/* <Backdrop /> */}
-      <section className='slider'>
-        <img src={arrowLeftWhite} className='left-arrow' onClick={prevSlide} />
-        <img src={arrowRightWhite} className='right-arrow' onClick={nextSlide} />
+      <section className="slider">
+        <img src={arrowLeftWhite} alt="" className="left-arrow" onClick={prevSlide} />
+        <img src={arrowRightWhite} alt="" className="right-arrow" onClick={nextSlide} />
         {sliderData.map((slide, index) => {
           return (
-            <div
-              className={index === current ? 'slide active' : 'slide'}
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, type: "spring", bounce: 0.2 }} exit={{ x: "-90%" }} 
+              className={index === current ? "slide active" : "slide"}
               key={index}
             >
               {index === current && (
-                <img src={slide.image} alt='travel image' className='image' />
+                <img src={slide.image} alt="" className="image" />
               )}
-            </div>
+            </motion.div>
           );
         })}
       </section>
