@@ -125,13 +125,15 @@ const ImageSlider = ({ slides }) => {
         <img src={arrowRightWhite} alt="" className="right-arrow" onClick={nextSlide} />
         {sliderData.map((slide, index) => {
           return (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, type: "spring", bounce: 0.2 }} exit={{ x: "-90%" }} 
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, type: "spring", bounce: 0.2 }} exit={{ x: "-90%" }}>
+            <div
               className={index === current ? "slide active" : "slide"}
               key={index}
             >
               {index === current && (
                 <img src={slide.image} alt="" className="image" />
               )}
+              </div>
             </motion.div>
           );
         })}
