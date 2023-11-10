@@ -1,17 +1,28 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:  "lumiera", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  letter-spacing: 0.1rem;
   scrollbar-width: 1vw;
+  background-color: rgb(26, 26, 26);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: "lumiera", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  src: local("lumiera"), url("./fonts/Lumiera.woff");
+  font-family: "Lumiera";
+}
+@font-face {
+  src: local("enchanted"), url("./fonts/EnchantedLand.otf");
+  font-family: "EnchantedLand";
 }
 
 @media (min-width: 1200px) {

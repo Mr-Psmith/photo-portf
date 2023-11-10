@@ -74,7 +74,7 @@ import ArrowLeft from "../utility/arrow-left";
 
 
 
-function PGallerySelection(props) {
+function GallerySelection(props) {
 
     const [slider, setSlider] = useState(false);
     const [closeX, setCloseX] = useState(false);
@@ -545,4 +545,4 @@ function PGallerySelection(props) {
     )
 }
 
-export default PGallerySelection;
+export default GallerySelection;
