@@ -1,0 +1,47 @@
+.main__emailCP {
+    position: fixed;
+    top: 40vh;
+    left: 35vw;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 15px;
+    background-color: rgba(7, 37, 37, 0.933);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main__emailCP h1 {
+    color: snow;
+    letter-spacing: 0.2vw;
+    font-size: 1.9vh;
+    line-height: 4vh;
+    padding: 1vh 1vw;
+}
+
+@media (max-width: 800px) {
+    .main__emailCP {
+        top: 70vh;
+        left: 30vw;
+        width: 57vw;
+        height: 17vh;
+    }
+}
+@media (max-width: 400px) {
+    .main__emailCP {
+        top: 70vh;
+        left: 10vw;
+        width: 70vw;
+        height: 20vh;
+    }
+}
+@media(max-width: 300px) {
+    .main__emailCP {
+        top: 70vh;
+        left: 10vw;
+        width: 80vw;
+        height: 20vh;
+    }
+    .main__emailCP h1 {
+        font-size: 1.2rem;
+    }
+}

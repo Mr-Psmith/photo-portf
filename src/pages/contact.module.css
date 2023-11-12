@@ -1,0 +1,207 @@
+.contactMain {
+    width: 90vw;
+    height: 72vh;
+    margin: 2.5vh auto;
+    padding: 1vh 1vw;
+    background: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)),url(../img/IMGP7571-3.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.contactUnvisibleblock1,
+.contactUnvisibleblock2 {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+}
+.contactUnvisibleblock2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3vh 3vw;
+}
+.contactUnvisibleblock2__icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactUnvisibleblock1 {
+    max-width: 30vw;
+    margin: auto;
+}
+.contactMain input,
+.contactMain textarea {
+    background-color: rgba(5.1, 23.5, 23.5, 0.933);
+    color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.contactMain textarea {
+    padding: 0.5vh 0.5vw;
+    box-sizing: border-box;
+}
+.contactMain input:focus-visible,
+.contactMain textarea:focus-visible {
+    border-color: red;
+}
+
+.contactUnvisibleblock1_1 {
+    padding-bottom: 1vh;
+}
+.contactUnvisibleblock1_1 input {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 0.4vh;
+}
+.formContactMessageTextarea {
+    margin-top: 0.3vh;
+    width: 100%;
+    max-width: 100%;
+    height: 13vh;
+    max-height: 20vh;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.contactFormButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+    width: 100%;
+    background-color: black;
+}
+.contactFormButtons button {
+    background-color: black;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 2vh 2vw;
+    cursor: pointer;
+    border: none;
+}
+.contactFormButtons button:hover {
+    background-color: rgba(5.1, 23.5, 23.5, 0.933);
+    color: rgb(176, 136, 7);
+}
+
+.contactUnvisibleblock2 {
+    padding-bottom: 3vh;
+    text-align: center;
+    border-left: rgb(127, 99, 5) 7px solid;
+}
+.picPlus__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactUnvisibleblock2 .picPlus {
+    width: 20vw;
+    margin: 2vh auto;
+    
+}
+.contactUnvisibleblock2__icon_iconsSry {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.contactUnvisibleblock2 .fac,
+.contactUnvisibleblock2 .inst,
+.contactUnvisibleblock2 .github,
+.contactUnvisibleblock2 .twitter {
+    width: 5vw;
+    border-radius: 17px;
+    cursor: pointer;
+}
+.contactUnvisibleblock2 .fac:hover,
+.contactUnvisibleblock2 .inst:hover,
+.contactUnvisibleblock2 .twitter:hover,
+.contactUnvisibleblock2 .github:hover {
+    background-color: rgb(3, 43, 43);
+}
+
+.contactUnvisibleblock2 .github,
+.contactUnvisibleblock2 .twitter {
+    border-radius: 200px;
+}
+
+@media (max-width: 1200px) {
+    .contactMain {
+        left: 10vw;
+    }
+}
+@media (max-width: 700px) {
+    .contactMain {
+        top: 3vh;
+    }
+    .contactUnvisibleblock2 .picPlus {
+        width: 30vw;
+    }
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 7vw;   
+    }
+}
+@media (max-width: 600px) {
+
+    .contactMain {
+        position: fixed;
+        top: 3vh;
+        left: 3vw;
+        width: 85vw;
+        height: 75vh;
+        font-size: 1.4rem;
+    }
+
+    .contactUnvisibleblock1,
+    .contactUnvisibleblock2 {
+        margin: 5vh 0vw;
+        padding: 1vh 1vw;
+        width: 100%;
+    }
+    .contactUnvisibleblock1 {
+        display: none;
+    }
+   
+    .contactUnvisibleblock2 {
+        padding-bottom: 3vh;
+        text-align: center;
+        width: 100%;
+        border-left: none;
+        border-top: rgb(127, 99, 5) 7px solid;
+        border-bottom: rgb(127, 99, 5) 7px solid;
+    }
+    .contactUnvisibleblock2 .picPlus {
+        width: 50vw;
+    }
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 17vw;   
+    }
+}
+@media(max-width: 300px) {
+    .contactMain {
+        top: 3vh;
+        left: -5vw;
+        width: 90vw;
+        height: 80vh;
+    }
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 17vw;   
+    }
+
+}
