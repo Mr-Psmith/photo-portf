@@ -8,9 +8,11 @@
   background-color: rgba(6, 7, 7, 0.933);
   color: snow;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 section {
   margin: 0;
+  box-sizing: border-box;
   
 }
 

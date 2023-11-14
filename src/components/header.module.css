@@ -1,4 +1,21 @@
-.main {
+.header__wrapper {
+    position: static;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 17vh;
+}
+.header__NoWrapper {
+    position: static;
+    top: 0; left: 0;
+    width: 10vw;
+    height: 17vh;
+    transform: translateY(-120%);
+    transition: transform 1s ease-out; 
+}
+.header_main {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
     height: 15vh;
     display: grid;
     grid-template-rows: 75% 25%;

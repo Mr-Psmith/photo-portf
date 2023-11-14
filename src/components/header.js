@@ -8,7 +8,24 @@ import GalleryUnderMenu from "./galleryMenu";
 
 function Header(props) {
     const [gum, setGum] = useState("");
-    
+    const [glideUp, setGlideUp] = useState(false);
+
+    useEffect (() => {
+        function scrollupHandler() {
+            if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+                setGlideUp(true);
+            } else {
+                setGlideUp(false);
+            }
+        }
+    }, scrollupHandler)
+    /* function scrollupHandler() {
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+            setGlideUp(true);
+        } else {
+            setGlideUp(false);
+        }
+    } */
     /* useEffect(() => {
     function galleryMenuHandler() {
         setGum(<GalleryUnderMenu />);
@@ -19,9 +36,12 @@ function Header(props) {
 
     return (
         <>
-            <div className={classes.header_main}>
-                <HeaderUpper />
-                <MenuMain gallerySelectionHandlerPr={props.gallerySelectionHandlerPpr} aboutHandlerPr={props.aboutHandlerPpr} contactHandlerPr={props.contactHandlerPpr} galleryThematicHandlerPr={props.galleryThematicHandlerPpr} printsHandlerPr={props.printsHandlerPpr} /* galleryMenuPr={galleryMenuHandler} galleryMenuLeavePr={galleryMenuLeaveHandler} */ />
+            {/* <div className={ glideUp ? {classes.header__wrapper} : `${classes.header__wrapper} ${classes.header__wrapper}`}> */}
+            <div className= {glideUp ? "header__wrapper header__NoWrapper" : "header__wrapper"} /* {glideUp ? "header__wrapper" : "header__NoWrapper"} */>
+                <div className={classes.header_main} onScroll={scrollupHandler}>
+                    <HeaderUpper />
+                    <MenuMain gallerySelectionHandlerPr={props.gallerySelectionHandlerPpr} aboutHandlerPr={props.aboutHandlerPpr} contactHandlerPr={props.contactHandlerPpr} galleryThematicHandlerPr={props.galleryThematicHandlerPpr} printsHandlerPr={props.printsHandlerPpr} /* galleryMenuPr={galleryMenuHandler} galleryMenuLeavePr={galleryMenuLeaveHandler} */ />
+                </div>
             </div>
         </>
     )

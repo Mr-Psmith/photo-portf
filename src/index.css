@@ -9,6 +9,8 @@ body {
   letter-spacing: 0.1rem;
   scrollbar-width: 1vw;
   background-color: rgb(26, 26, 26);
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 code {
