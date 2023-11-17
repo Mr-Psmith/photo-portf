@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import HeaderUpper from "./header-upper";
-import classes from "./header.css";
+//import classes from "./header.css";
 import MenuMain from "./menu-main";
-import GalleryUnderMenu from "./galleryMenu";
+//import GalleryUnderMenu from "./galleryMenu";
 import {motion} from "framer-motion";
 
 
@@ -12,7 +12,7 @@ function Header(props) {
 
     /* useEffect (() => { */
         function scrollupHandler() {
-            if (document.body.scrollTop || document.documentElement.scrollTop || document.window.scrollTop || document.getElementsByClassName("header_main").scrollTop > 10) {
+            if (document.body.scrollTop || document.documentElement.scrollY || document.window.scrollY || document.getElementsByClassName("header_main").scrollY > 10) {
                 setGlideUp(true);
             } else {
                 setGlideUp(false);
