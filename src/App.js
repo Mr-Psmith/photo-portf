@@ -66,9 +66,9 @@ function App() {
 
 
   return (
-    <div className={classes.main__App}>
+    <div className={classes.main__App} >
       <section>
-        <Header gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} />
+        <Header gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} /* onScroll={headerOnScrollPr} *//>
       </section>
       <section>
         {pgs ? GallerySelectionConst : ""}

@@ -74,10 +74,10 @@
     justify-content: center;
     margin-top: 2vh;
     width: 100%;
-    background-color: black;
+    background-color: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)),url(../img/IMGP7571-3.jpg) no-repeat;
 }
 .contactFormButtons button {
-    background-color: black;
+    background: transparent;
     font-size: 1.5rem;
     border-radius: 5px;
     color: whitesmoke;
@@ -86,7 +86,9 @@
     border: none;
 }
 .contactFormButtons button:hover {
-    background-color: rgba(5.1, 23.5, 23.5, 0.933);
+    /* background-color: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)); */
+    background-color: rgba(5, 24, 24, 0.77);
+    border-radius: 200px;
     color: rgb(176, 136, 7);
 }
 

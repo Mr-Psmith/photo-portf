@@ -6,10 +6,11 @@ function GalleryUnderMenu(props) {
 
     return (
         <>
-            <motion.div initial={{ x: "900%" }} animate={{ x: props.closeXPr ? "0" : 0 }} transition={{ delay: 1, duration: 1, type: "spring", bounce: 0.3 }} exit={{x: "900%"}} className={classes.galleryMenuMain}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity:1 }} transition={{ duration: 1, type: "spring", bounce: 0.3 }} exit={{opacity:0}} className={classes.galleryMenuMain}>
+                <li>Galleries</li>
                 <li>Azores</li>
                 <li>Oceans</li>
-                <li>Greenery</li>
+                <li>Nature</li>
                 <li>Cities</li>
                 <li>Canada</li>
             </motion.div>
