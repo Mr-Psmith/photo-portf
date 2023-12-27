@@ -491,8 +491,6 @@ function GallerySelection(props) {
                     <img src={pictureSelect21} alt=""></img>
                 </div> */}
 
-
-
                 {/* <div className={classes.PGallerySelection__Box25}>
                     <img src={pictureSelect25} alt=""></img>
                 </div> */}

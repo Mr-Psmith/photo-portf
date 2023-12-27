@@ -57,12 +57,14 @@
 }
 
   .slide {
-    opacity: 0.7;
+    transform: translateY(110vh);
+    /* opacity: 0.7; */
     transition-duration: 1s ease;
   }
   
   .slide.active {
-    opacity: 1;
+    transform: translateY(0);
+    /* opacity: 1; */
     transition-duration: 1s;
     /* transform: scale(1.08); */
   }
