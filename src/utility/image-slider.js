@@ -125,7 +125,7 @@ const ImageSlider = ({ slides }) => {
         <img src={arrowRightWhite} alt="" className="right-arrow" onClick={nextSlide} />
         {sliderData.map((slide, index) => {
           return (
-            <motion.div initial={{ opacity: 0.5 }} animate={{ opacity: 1 }} transition={{ duration: 1, type: "spring", bounce: 0.2 }} exit={{ x: "-90%" }}>
+            <motion.div initial={{ y: "-110vh" }} animate={{ y:0 }} transition={{ duration: 0.5, type: "spring", bounce: 0 }} exit={{ x: "-90%" }}>
             <div
               className={index === current ? "slide active" : "slide"}
               key={index}
