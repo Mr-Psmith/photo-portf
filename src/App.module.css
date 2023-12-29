@@ -9,11 +9,20 @@
   color: snow;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 section {
   margin: 0;
   box-sizing: border-box;
-  
+  overflow-x: hidden;
 }
 
 /* .section__footer {
