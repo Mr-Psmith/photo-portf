@@ -1,8 +1,8 @@
 .slider {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   left: 0vw;
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   margin: 0 auto;
   /* background-color: rgba(240, 248, 255, 0.178); */
