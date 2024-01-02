@@ -7,7 +7,7 @@ import GalleryThematic from "./pages/picture-gallery-thematic";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import EmailCopyPopup from "./utility/email-copy-popup";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
   
@@ -63,6 +63,13 @@ function App() {
   const GalleryThematicConst = <GalleryThematic />;
   const AboutConst = <About />;
   const contactsConst = <Contact  emailButtonHandlerPr={emailButtonHandler} />;
+
+
+  createBrowserRouter([
+    { path: "/", element: <App /> },
+    { path: "/Galleries", element: <GallerySelection />}
+  ]);
+
 
 
   return (

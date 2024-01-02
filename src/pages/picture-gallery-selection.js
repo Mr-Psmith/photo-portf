@@ -3,21 +3,7 @@ import { useState } from "react";
 import "../index.css";
 import { motion } from "framer-motion";
 
-//import pictureSelect1 from "../img/GallerySelection/IMGP0320-1.jpg";
-//import pictureSelect2 from "../img/GallerySelection/IMGP0512-1.jpg";
-//import pictureSelect4 from "../img/GallerySelection/IMGP0630.jpg";
-//import pictureSelect5 from "../img/GallerySelection/IMGP0664.jpg";
-//import pictureSelect8 from "../img/GallerySelection/IMGP0806-1-3.jpg";
-//import pictureSelect9 from "../img/GallerySelection/IMGP1102.jpg";
-//import pictureSelect10 from "../img/GallerySelection/IMGP1535-1-2.jpg";
-//import pictureSelect11 from "../img/GallerySelection/IMGP1639.jpg";
-//import pictureSelect12 from "../img/GallerySelection/IMGP1640-1-2.jpg";
-//import pictureSelect17 from "../img/GallerySelection/IMGP2118-1-2.jpg";
-//import pictureSelect21 from "../img/GallerySelection/IMGP2690-1.jpg";
-//import pictureSelect27 from "../img/GallerySelection/IMGP3158-1-2.jpg";
-//import pictureSelect25 from "../img/GallerySelection/IMGP3083-1.jpg";
-//import pictureSelect29 from "../img/GallerySelection/IMGP3258-1.jpg";
-//import pictureSelect30 from "../img/GallerySelection/IMGP3275-1.jpg";
+
 import pictureSelect7 from "../img/GallerySelection/IMGP0749-1.jpg";
 import pictureSelect3 from "../img/GallerySelection/IMGP2106-1.jpg";
 import pictureSelect13 from "../img/GallerySelection/IMGP1651-WP.jpg";
