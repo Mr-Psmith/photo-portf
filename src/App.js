@@ -7,7 +7,7 @@ import GalleryThematic from "./pages/picture-gallery-thematic";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import EmailCopyPopup from "./utility/email-copy-popup";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, /* RouterProvider */ } from "react-router-dom";
 
 function App() {
   
