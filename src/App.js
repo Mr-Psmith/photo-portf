@@ -8,16 +8,16 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import EmailCopyPopup from "./utility/email-copy-popup";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./pages/Root";
 
 
 
 const router = createBrowserRouter([
-  /* { path: "/", element: <App /> }, */
-  { path: "/", element: <GallerySelection /> },
-  {path: "/Header", element: <Header />},
-  { path: "/Galleries", element: <GalleryThematic /> },
-  { path: "/About", element: <About /> },
-  { path: "/Contact", element: <Contact /> }
+  { path: "", element: <GallerySelection /> },
+  { path: "", element: <RootLayout /> },
+  { path: "Galleries", element: <GalleryThematic /> },
+  { path: "About", element: <About /> },
+  { path: "Contact", element: <Contact /> }
 ]);
 
 function App() {
@@ -84,7 +84,7 @@ function App() {
     <RouterProvider router={router}>
       <div className={classes.main__App} >
         <section>
-          <Header gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} /* onScroll={headerOnScrollPr} */ />
+          <RootLayout gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} /* onScroll={headerOnScrollPr} */ />
         </section>
         <section>
 
