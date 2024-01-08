@@ -7,22 +7,22 @@ import GalleryThematic from "./pages/picture-gallery-thematic";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import EmailCopyPopup from "./utility/email-copy-popup";
-//import { createBrowserRouter, RouterProvider } from "react-router-dom";
-//import RootLayout from "./pages/Root";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./pages/Root";
 import Header from "./components/header";
 
 
 
-/* const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/", element: <RootLayout />, children: [
-      { index:true, element: <GallerySelection /> },
+      { index: true, element: <GallerySelection /> },
       { path: "Galleries", element: <GalleryThematic /> },
       { path: "About", element: <About /> },
       { path: "Contact", element: <Contact /> }
     ],
   },
-]); */
+]);
 
 function App() {
 
@@ -82,28 +82,29 @@ function App() {
 
 
 
-
-
   return (
-    <RouterProvider router={router}>
-      <div className={classes.main__App} >
-        <section>
-          <Header gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} /* onScroll={headerOnScrollPr} */ />
-        </section>
-        <section>
+
+    <div className={classes.main__App} >
+      {/* <RootLayout /* gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} */ /* onScroll={headerOnScrollPr} /> */}
+      <RouterProvider router={router}>
+      <section>
+        <Header gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} /* onScroll={headerOnScrollPr} */ />
+      </section>
+      <section>
+        
           {/* <RootLayout /* gallerySelectionHandlerPpr={gallerySelectionHandler} aboutHandlerPpr={aboutHandler} contactHandlerPpr={contactHandler} galleryThematicHandlerPpr={galleryThematicHandler} */ /* onScroll={headerOnScrollPr} /> */}
           {pgs ? GallerySelectionConst : ""}
           {pgt ? GalleryThematicConst : ""}
           {about ? AboutConst : ""}
           {contacts ? contactsConst : ""}
           {emailCopyPopup ? <EmailCopyPopup /> : ""}
-
-        </section>
-        <section className={classes.section__footer}>
-          <Footer emailCopyHandler={emailCopyPopupHandler} />
-        </section>
-      </div>
-    </RouterProvider>
+        
+      </section>
+      <section className={classes.section__footer}>
+        <Footer emailCopyHandler={emailCopyPopupHandler} />
+      </section>
+      </RouterProvider>
+    </div>
   );
 }
 
