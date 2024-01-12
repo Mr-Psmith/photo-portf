@@ -344,7 +344,7 @@ function GallerySelection(props) {
         setBox35Picture(false);
         setBox36Picture(false);
         setBox37Picture(false);
-        setBox23Picture(false);/* s */
+        setBox23Picture(false);
     }
 
 

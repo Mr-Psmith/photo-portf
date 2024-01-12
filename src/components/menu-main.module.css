@@ -12,15 +12,27 @@
     border-bottom: snow 1px solid;
     border-top: snow 1px solid;
 }
+
 .menu_main li {
+    list-style: none;
+    color: rgba(24, 158, 158, 0.933);
+    font-size: 2.5vh;
+    margin: 0 auto;
+    padding: 0.5vh 1vw;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu_main li link {
     color: rgba(24, 158, 158, 0.933);
     font-size: 2.5vh;
     margin: 0 auto;
     padding: 0.5vh 1vw;
     list-style: none;
     cursor: pointer;
+    text-decoration: none;
 }
-.menu_main li:hover {
+.menu_main li Link:hover {
     color: snow;
     background-color: rgba(5, 29, 29, 0.933);
     border-bottom-right-radius: 25px;

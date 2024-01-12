@@ -1,7 +1,7 @@
-import { useState } from "react";
+//import { useState } from "react";
 import classes from "./menu-main.module.css";
-import GalleryUnderMenu from "./galleryMenu";
-import { motion } from "framer-motion";
+//import GalleryUnderMenu from "./galleryMenu";
+//import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
