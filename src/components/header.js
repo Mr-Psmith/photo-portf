@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 
 function Header(props) {
-    const [gum, setGum] = useState("");
+    //const [gum, setGum] = useState("");
     const [glideUp, setGlideUp] = useState(false);
     const [prevOffset, setPrevOffset] = useState(0);
 

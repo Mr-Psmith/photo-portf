@@ -80,27 +80,13 @@ img:active {
     width: 33vw;
 }
 
-/* .PGallerySelection__Box1 {
-    width: 25vw;
-}
 
-
-.PGallerySelection__Box2 {
-    width: 32vw;
-} */
 
 .PGallerySelection__Box3 {/* 6 */
     /* width: 32rem; */
     width: 47vh;
 }
 
-/* .PGallerySelection__Box4 {
-    width: 25vw;
-}
-
-.PGallerySelection__Box5 {
-    width: 24vw;
-} */
 
 
 .PGallerySelection__Box6 {/* 4 */
@@ -279,5 +265,9 @@ img:active {
     /* width: 31rem; */
     width: 46vh;
 }
+
+
+
+
 
 
