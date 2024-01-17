@@ -45,8 +45,7 @@ function App() {
   const [pgt, setPgt] = useState(false);
   const [about, setAbout] = useState(false);
   const [contacts, setContacts] = useState(false); */
-  const [text] = useState('psancthus@gmail.com');
-  const [emailCopyPopup, setEmailCopyPopup] = useState(false);
+  
 
   /* function gallerySelectionHandler() {
     setPgs(true);
