@@ -23,7 +23,7 @@ const GallerySelectionConst = <GallerySelection /* Prbox16ClickHandler={box16Cli
 
 const router = createBrowserRouter([
   {
-    path: "/", element: <RootLayout />, children: [
+    path: "/", element: <RootLayout emailCopyPopup={emailCopyPopup} />, children: [
       { index: true, element: <GallerySelection /> },
       {
         path: "/Galleries", element: <GalleryThematic />, children: [
