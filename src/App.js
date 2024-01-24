@@ -41,10 +41,10 @@ const router = createBrowserRouter([
 
 function App() {
 
-  /* const [pgs, setPgs] = useState(true);
+  const [pgs, setPgs] = useState(true);
   const [pgt, setPgt] = useState(false);
   const [about, setAbout] = useState(false);
-  const [contacts, setContacts] = useState(false); */
+  const [contacts, setContacts] = useState(false);
   
 
   /* function gallerySelectionHandler() {
@@ -72,21 +72,21 @@ function App() {
     setContacts(false);
   } */
 
-  /* const emailButtonHandler = async () => {
+  const emailButtonHandler = async () => {
     setEmailCopyPopup(true);
     setTimeout(() => {
       setEmailCopyPopup(false);
     }, 2500);
     await navigator.clipboard.writeText(text);
-  } */
+  }
 
-  /* const emailCopyPopupHandler = async () => {
+  const emailCopyPopupHandler = async () => {
     setEmailCopyPopup(true);
     setTimeout(() => {
       setEmailCopyPopup(false);
     }, 2500);
     await navigator.clipboard.writeText(text);
-  } */
+  }
 
   /* const GallerySelectionConst = <GallerySelection  />;
   const GalleryThematicConst = <GalleryThematic />;
