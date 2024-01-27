@@ -1,8 +1,8 @@
 .galleryThematic__main {
     position: relative;
-    top: 15vh;
+    top: 16vh;
     width: 90vw;
-    margin: 2vh auto;
+    margin: 2.5vh auto;
     padding: 0vh 1vw;
     padding-bottom: 3vh;
     background: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)),url(../img/IMGP7571-3.jpg) no-repeat;
@@ -22,6 +22,7 @@
     background-color: transparent;
     border-radius: 15px;
     -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
 }
 .menuImages {
     background-size: cover;
@@ -35,6 +36,7 @@
     top: 0vh;
     left: 0;
     font-size: 1.4vh;
+    color: whitesmoke;
 }
 .menuImages:hover {
     transform: scale(101%);

@@ -6,8 +6,24 @@ import gith from "../img/github.png";
 import pic from "../img/picsResizedTo10/IMGP1102.jpg";
 //import "./transition.css"
 import { motion } from "framer-motion";
+import { useState } from "react";
+import EmailCopyPopup from "../utility/email-copy-popup";
 
 function Contact(props) {
+
+    const [text] = useState('psancthus@gmail.com');
+    const [emailCopyPopup, setEmailCopyPopup] = useState(false);
+
+    const emailButtonHandler = async () => {
+        setEmailCopyPopup(true);
+        setTimeout(() => {
+            setEmailCopyPopup(false);
+        }, 2500);
+        await navigator.clipboard.writeText(text);
+    }
+
+
+
 return (
     <>
         <motion.div /* animate={{ x: props.contactSlidePr ? "-90%" : 0, opacity: props.contactSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }} */>
@@ -15,7 +31,7 @@ return (
                 <div className={classes.contactUnvisibleblock1}>
                     <h1>You can write me on my email address!</h1>
                     <div className={classes.contactFormButtons}>
-                            <button onClick={props.emailButtonHandlerPr}>psancthus@gmail.com</button>
+                            <button onClick={emailButtonHandler}>psancthus@gmail.com</button>
                         </div> 
                 </div>
                 <div className={classes.contactUnvisibleblock2}>
@@ -42,6 +58,7 @@ return (
                         </div>
                     </div>
                 </div>
+                {emailCopyPopup ? <EmailCopyPopup /> : ""}
             </div>
         </motion.div>
         {/* </CSSTransition> */}

@@ -36,30 +36,12 @@ export default function RootLayout(props) {
         setContacts(false);
     } */
 
-    const [text] = useState('psancthus@gmail.com');
-    const [emailCopyPopup, setEmailCopyPopup] = useState(false);
-
-    const emailButtonHandler = async () => {
-        setEmailCopyPopup(true);
-        setTimeout(() => {
-            setEmailCopyPopup(false);
-        }, 2500);
-        await navigator.clipboard.writeText(text);
-    }
-
-    const emailCopyPopupHandler = async () => {
-        setEmailCopyPopup(true);
-        setTimeout(() => {
-            setEmailCopyPopup(false);
-        }, 2500);
-        await navigator.clipboard.writeText(text);
-    }
 
     return <>
         <main>
             <Outlet />
             <Header /* gallerySelectionHandlerPpr={props.gallerySelectionHandlerPpr} aboutHandlerPpr={props.aboutHandlerPpr} contactHandlerPpr={props.contactHandlerPpr} galleryThematicHandlerPpr={props.galleryThematicHandlerPpr} */ /* onScroll={headerOnScrollPr} */ />
-            <Footer emailCopyHandler={emailCopyPopupHandler} />
+            <Footer /* emailCopyHandler={emailCopyPopupHandler} */ />
         </main>
     </>
 }
