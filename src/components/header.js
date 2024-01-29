@@ -54,7 +54,7 @@ function Header(props) {
                 {/* <div className= { glideUp ? "header_main header_main__glide" : "header_main" }  onScroll={scrollupHandler}> */}
                 <motion.div animate={{ y: glideUp ? "-110%" : 0/* , opacity: glideUp ? 1 : 0 */ }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} /* exit={{ x: "110%" }} */ className= /* { glideUp ? "header_main header_main__glide" : */ "header_main" /* }  */ onScroll={scrollupHandler}>
                     <HeaderUpper />
-                    <MenuMain gallerySelectionHandlerPr={props.gallerySelectionHandlerPpr} aboutHandlerPr={props.aboutHandlerPpr} contactHandlerPr={props.contactHandlerPpr} galleryThematicHandlerPr={props.galleryThematicHandlerPpr} printsHandlerPr={props.printsHandlerPpr} /* galleryMenuPr={galleryMenuHandler} galleryMenuLeavePr={galleryMenuLeaveHandler} */ />
+                    <MenuMain galleryBackToNormalHandler={props.galleryBackToNormalHandler} /*gallerySelectionHandlerPr={props.gallerySelectionHandlerPpr} aboutHandlerPr={props.aboutHandlerPpr} contactHandlerPr={props.contactHandlerPpr} galleryThematicHandlerPr={props.galleryThematicHandlerPpr} printsHandlerPr={props.printsHandlerPpr} */ /* galleryMenuPr={galleryMenuHandler} galleryMenuLeavePr={galleryMenuLeaveHandler} */ />
                 </motion.div>
             </div>
         </>

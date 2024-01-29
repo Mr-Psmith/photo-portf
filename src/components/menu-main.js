@@ -21,7 +21,7 @@ function MenuMain(props) {
             <div className={classes.menu_main}>
                 <li /* onClick={props.gallerySelectionHandlerPr} */><Link className={classes.menuMain__links} to="">Selected Showcase</Link></li>
                 <li /* onClick={props.aboutHandlerPr} */><Link className={classes.menuMain__links} to="about">About Me</Link></li>
-                <li /* onClick={props.galleryThematicHandlerPr *//*  onMouseEnter={galleryMenuPr} onMouseLeave={galleryMenuLeavePr} */><Link className={classes.menuMain__links} to="galleries">Galleries</Link></li>
+                <li /* onClick={props.galleryThematicHandlerPr *//*  onMouseEnter={galleryMenuPr} onMouseLeave={galleryMenuLeavePr} */><Link className={classes.menuMain__links} onClick={props.galleryBackToNormalHandler} to="galleries">Galleries</Link></li>
                 {/* {slideDown ? <GalleryUnderMenu /> : ""} */}
                 <li /* onClick={props.contactHandlerPr} */><Link className={classes.menuMain__links} to="contact">Contact</Link></li>
                 {/* <li onClick={props.printsHandlerPr}>Prints!</li> */}

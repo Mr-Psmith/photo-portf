@@ -40,7 +40,7 @@ export default function RootLayout(props) {
     return <>
         <main>
             <Outlet />
-            <Header /* gallerySelectionHandlerPpr={props.gallerySelectionHandlerPpr} aboutHandlerPpr={props.aboutHandlerPpr} contactHandlerPpr={props.contactHandlerPpr} galleryThematicHandlerPpr={props.galleryThematicHandlerPpr} */ /* onScroll={headerOnScrollPr} */ />
+            <Header galleryBackToNormalHandler={props.galleryBackToNormalHandler} /* gallerySelectionHandlerPpr={props.gallerySelectionHandlerPpr} aboutHandlerPpr={props.aboutHandlerPpr} contactHandlerPpr={props.contactHandlerPpr} galleryThematicHandlerPpr={props.galleryThematicHandlerPpr} */ /* onScroll={headerOnScrollPr} */ />
             <Footer /* emailCopyHandler={emailCopyPopupHandler} */ />
         </main>
     </>
