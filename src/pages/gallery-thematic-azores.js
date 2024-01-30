@@ -1,27 +1,27 @@
 import classes from "./gallery-thematic-pieces.module.css";
 
 import pictureSelect7 from "../img/GallerySelection/IMGP0749-1.jpg";
-import pictureSelect3 from "../img/GallerySelection/IMGP2106-1.jpg";
-import pictureSelect13 from "../img/GallerySelection/IMGP1651-WP.jpg";
+// import pictureSelect3 from "../img/GallerySelection/IMGP2106-1.jpg";
+// import pictureSelect13 from "../img/GallerySelection/IMGP1651-WP.jpg";
 import pictureSelect14 from "../img/GallerySelection/IMGP1781-1.jpg";
-import pictureSelect15 from "../img/GallerySelection/IMGP1880-1-4.jpg";
+// import pictureSelect15 from "../img/GallerySelection/IMGP1880-1-4.jpg";
 import pictureSelect16 from "../img/GallerySelection/IMGP2030-1-3.jpg";
 import pictureSelect18 from "../img/GallerySelection/IMGP2346-1.jpg";
 import pictureSelect19 from "../img/GallerySelection/IMGP2413-1-2.jpg";
 import pictureSelect20 from "../img/GallerySelection/IMGP2447-1.jpg";
-import pictureSelect22 from "../img/GallerySelection/IMGP2694-1.jpg";
+// import pictureSelect22 from "../img/GallerySelection/IMGP2694-1.jpg";
 import pictureSelect23 from "../img/GallerySelection/IMGP2986-1-2.jpg";
-import pictureSelect24 from "../img/GallerySelection/IMGP3055-1-3.jpg";
-import pictureSelect26 from "../img/GallerySelection/IMGP3144-1.jpg";
+// import pictureSelect24 from "../img/GallerySelection/IMGP3055-1-3.jpg";
+// import pictureSelect26 from "../img/GallerySelection/IMGP3144-1.jpg";
 import pictureSelect6 from "../img/GallerySelection/IMGP0734.jpg";
 import pictureSelect28 from "../img/GallerySelection/IMGP3248-1.jpg";
-import pictureSelect31 from "../img/GallerySelection/IMGP3608-1.jpg";
-import pictureSelect32 from "../img/GallerySelection/IMGP3835-1-3.jpg";
-import pictureSelect33 from "../img/GallerySelection/IMGP6593.jpg";
-import pictureSelect34 from "../img/GallerySelection/IMGP6894.jpg";
-import pictureSelect35 from "../img/GallerySelection/IMGP6901.jpg";
-import pictureSelect36 from "../img/GallerySelection/IMGP7352.jpg";
-import pictureSelect37 from "../img/GallerySelection/IMGP7655.jpg";
+// import pictureSelect31 from "../img/GallerySelection/IMGP3608-1.jpg";
+// import pictureSelect32 from "../img/GallerySelection/IMGP3835-1-3.jpg";
+// import pictureSelect33 from "../img/GallerySelection/IMGP6593.jpg";
+// import pictureSelect34 from "../img/GallerySelection/IMGP6894.jpg";
+// import pictureSelect35 from "../img/GallerySelection/IMGP6901.jpg";
+// import pictureSelect36 from "../img/GallerySelection/IMGP7352.jpg";
+// import pictureSelect37 from "../img/GallerySelection/IMGP7655.jpg";
 
 import picture30Select7 from "../img/picsResized30/IMGP0749-1.jpg";
 import picture30Select3 from "../img/picsResized30/IMGP2106-1.jpg";
@@ -48,12 +48,12 @@ import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
 
 
 import Backdrop from "../utility/backdrop";
-import ImageSlider from "../utility/image-slider";
 import Close from "../utility/close-x";
 import { AnimatePresence, motion } from "framer-motion";
 import ArrowRight from "../utility/arrow-right";
 import ArrowLeft from "../utility/arrow-left";
 import { useState } from "react";
+import ImageSliderAzores from "../utility/image-slider-azores";
 
 
 
@@ -397,7 +397,7 @@ function GalleryThematicAzores() {
             {box23Picture ? box23PictureFull : ""}
 
             {backdrop ? <AnimatePresence><Backdrop PrbackdropHandler={backdropHandler} /></AnimatePresence> : ""}
-            {slider ? <AnimatePresence><ImageSlider /></AnimatePresence> : ""}
+            {slider ? <AnimatePresence><ImageSliderAzores /></AnimatePresence> : ""}
             {closeX ? <AnimatePresence ><Close closeAllHandlerPr={closeAllHandler} /></AnimatePresence> : ""}
 
 

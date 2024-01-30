@@ -48,12 +48,12 @@ import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
 
 
 import Backdrop from "../utility/backdrop";
-import ImageSlider from "../utility/image-slider";
 import Close from "../utility/close-x";
 import { AnimatePresence, motion } from "framer-motion";
 import ArrowRight from "../utility/arrow-right";
 import ArrowLeft from "../utility/arrow-left";
 import { useState } from "react";
+import ImageSliderNature from "../utility/image-slider-nature";
 
 
 function GalleryThematicGreenery() {
@@ -183,138 +183,138 @@ function GalleryThematicGreenery() {
     }
 
 
-    function box16ClickHandler() {
-        setCloseX(true);
-        setBox16Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box16ClickHandler() {
+    //     setCloseX(true);
+    //     setBox16Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box18ClickHandler() {
         setCloseX(true);
         setBox18Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box19ClickHandler() {
-        setCloseX(true);
-        setBox19Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box19ClickHandler() {
+    //     setCloseX(true);
+    //     setBox19Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box6ClickHandler() {
         setCloseX(true);
         setBox6Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box22ClickHandler() {
-        setCloseX(true);
-        setBox22Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box22ClickHandler() {
+    //     setCloseX(true);
+    //     setBox22Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box3ClickHandler() {
         setCloseX(true);
         setBox3Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box7ClickHandler() {
-        setCloseX(true);
-        setBox7Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box13ClickHandler() {
-        setCloseX(true);
-        setBox13Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box7ClickHandler() {
+    //     setCloseX(true);
+    //     setBox7Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box13ClickHandler() {
+    //     setCloseX(true);
+    //     setBox13Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box14ClickHandler() {
         setCloseX(true);
         setBox14Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box15ClickHandler() {
-        setCloseX(true);
-        setBox15Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box15ClickHandler() {
+    //     setCloseX(true);
+    //     setBox15Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box20ClickHandler() {
         setCloseX(true);
         setBox20Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box26ClickHandler() {
-        setCloseX(true);
-        setBox26Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box28ClickHandler() {
-        setCloseX(true);
-        setBox28Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box26ClickHandler() {
+    //     setCloseX(true);
+    //     setBox26Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box28ClickHandler() {
+    //     setCloseX(true);
+    //     setBox28Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box31ClickHandler() {
         setCloseX(true);
         setBox31Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box32ClickHandler() {
-        setCloseX(true);
-        setBox32Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box33ClickHandler() {
-        setCloseX(true);
-        setBox33Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box34ClickHandler() {
-        setCloseX(true);
-        setBox34Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box32ClickHandler() {
+    //     setCloseX(true);
+    //     setBox32Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box33ClickHandler() {
+    //     setCloseX(true);
+    //     setBox33Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box34ClickHandler() {
+    //     setCloseX(true);
+    //     setBox34Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box24ClickHandler() {
         setCloseX(true);
         setBox24Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box35ClickHandler() {
-        setCloseX(true);
-        setBox35Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box36ClickHandler() {
-        setCloseX(true);
-        setBox36Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box37ClickHandler() {
-        setCloseX(true);
-        setBox37Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
-    function box23ClickHandler() {
-        setCloseX(true);
-        setBox23Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box35ClickHandler() {
+    //     setCloseX(true);
+    //     setBox35Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box36ClickHandler() {
+    //     setCloseX(true);
+    //     setBox36Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box37ClickHandler() {
+    //     setCloseX(true);
+    //     setBox37Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
+    // function box23ClickHandler() {
+    //     setCloseX(true);
+    //     setBox23Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
 
     function pictureSwitchHandler() {
         setSlider(true);
@@ -396,7 +396,7 @@ function GalleryThematicGreenery() {
             {box23Picture ? box23PictureFull : ""}
 
             {backdrop ? <AnimatePresence><Backdrop PrbackdropHandler={backdropHandler} /></AnimatePresence> : ""}
-            {slider ? <AnimatePresence><ImageSlider /></AnimatePresence> : ""}
+            {slider ? <AnimatePresence><ImageSliderNature /></AnimatePresence> : ""}
             {closeX ? <AnimatePresence ><Close closeAllHandlerPr={closeAllHandler} /></AnimatePresence> : ""}
 
 

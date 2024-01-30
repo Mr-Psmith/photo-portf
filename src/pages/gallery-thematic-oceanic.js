@@ -48,12 +48,12 @@ import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
 
 
 import Backdrop from "../utility/backdrop";
-import ImageSlider from "../utility/image-slider";
 import Close from "../utility/close-x";
 import { AnimatePresence, motion } from "framer-motion";
 import ArrowRight from "../utility/arrow-right";
 import ArrowLeft from "../utility/arrow-left";
 import { useState } from "react";
+import ImageSliderOceanic from "../utility/image-slider-oceanic";
 
 
 function GalleryThematicOceanic() {
@@ -395,7 +395,7 @@ function GalleryThematicOceanic() {
             {box23Picture ? box23PictureFull : ""}
 
             {backdrop ? <AnimatePresence><Backdrop PrbackdropHandler={backdropHandler} /></AnimatePresence> : ""}
-            {slider ? <AnimatePresence><ImageSlider /></AnimatePresence> : ""}
+            {slider ? <AnimatePresence><ImageSliderOceanic /></AnimatePresence> : ""}
             {closeX ? <AnimatePresence ><Close closeAllHandlerPr={closeAllHandler} /></AnimatePresence> : ""}
 
 
