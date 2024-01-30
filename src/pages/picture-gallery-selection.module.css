@@ -16,16 +16,12 @@
 .PGallerySelection_main div {
     height: 30vh;
     margin: 2vh 2vw;
-    /* box-shadow: 3px 3px 3px 7px rgba(17, 94, 94, 0.411); */
     box-shadow: 7px 8px 0 rgba(0, 0, 0, 0.226), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
     cursor: pointer;
     background-color: transparent;
     border-radius: 15px;
     -webkit-tap-highlight-color: transparent;
 }
-/* .PGallerySelection_main div:hover {
-    box-shadow: 3px 3px 3px 7px rgba(17, 134, 134, 0.774);
-} */
 
 .PGallerySelection_main img {
     background-size: cover;
@@ -62,7 +58,6 @@ img:active {
     justify-content: center;
     align-items: center;
     z-index: 201;
-    /* transform: translateY(120%); */
 }
 
 .pictureViewersPicture {
@@ -76,7 +71,6 @@ img:active {
 }
 .pictureViewersPicture__Speshul18 {
     max-width: 80vw;
-    /* height: 90vh; */
     width: 33vw;
 }
 

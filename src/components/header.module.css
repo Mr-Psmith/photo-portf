@@ -1,0 +1,13 @@
+.header__wrapper {
+    position: relative;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 17vh;
+}
+.header_main {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1;
+}

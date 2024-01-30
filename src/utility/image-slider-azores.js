@@ -26,7 +26,6 @@ import picture30Select28 from "../img/picsResized30/IMGP3248-1.jpg";
 // import picture30Select35 from "../img/picsResized30/IMGP6901.jpg";
 // import picture30Select36 from "../img/picsResized30/IMGP7352.jpg";
 // import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
-// //import Backdrop from './backdrop';
 
 const sliderData = [
   {
@@ -113,13 +112,8 @@ const ImageSliderAzores = ({ slides }) => {
     setCurrent(current + 1);
   }
 
-  /*  if (!Array.isArray(slides) || slides.length <= 0) {
-     return null;
-   } */
-
   return (
     <>
-      {/* <Backdrop /> */}
       <section className="slider">
         <img src={arrowLeftWhite} alt="" className="left-arrow" onClick={prevSlide} />
         <img src={arrowRightWhite} alt="" className="right-arrow" onClick={nextSlide} />

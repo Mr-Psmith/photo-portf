@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
 }
 .contactUnvisibleblock1,
 .contactUnvisibleblock2 {
@@ -88,7 +87,6 @@
     border: none;
 }
 .contactFormButtons button:hover {
-    /* background-color: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)); */
     background-color: rgba(5, 24, 24, 0.77);
     border-radius: 200px;
     color: rgb(176, 136, 7);

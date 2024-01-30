@@ -113,13 +113,8 @@ const ImageSlider = ({ slides }) => {
     setCurrent(current + 1);
   }
 
-  /*  if (!Array.isArray(slides) || slides.length <= 0) {
-     return null;
-   } */
-
   return (
     <>
-      {/* <Backdrop /> */}
       <section className="slider">
         <img src={arrowLeftWhite} alt="" className="left-arrow" onClick={prevSlide} />
         <img src={arrowRightWhite} alt="" className="right-arrow" onClick={nextSlide} />

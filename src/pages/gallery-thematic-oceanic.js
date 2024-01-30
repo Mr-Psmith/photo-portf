@@ -3,19 +3,19 @@ import classes from "./gallery-thematic-pieces.module.css";
 import pictureSelect7 from "../img/GallerySelection/IMGP0749-1.jpg";
 import pictureSelect3 from "../img/GallerySelection/IMGP2106-1.jpg";
 import pictureSelect13 from "../img/GallerySelection/IMGP1651-WP.jpg";
-import pictureSelect14 from "../img/GallerySelection/IMGP1781-1.jpg";
+// import pictureSelect14 from "../img/GallerySelection/IMGP1781-1.jpg";
 import pictureSelect15 from "../img/GallerySelection/IMGP1880-1-4.jpg";
 import pictureSelect16 from "../img/GallerySelection/IMGP2030-1-3.jpg";
-import pictureSelect18 from "../img/GallerySelection/IMGP2346-1.jpg";
+// import pictureSelect18 from "../img/GallerySelection/IMGP2346-1.jpg";
 import pictureSelect19 from "../img/GallerySelection/IMGP2413-1-2.jpg";
-import pictureSelect20 from "../img/GallerySelection/IMGP2447-1.jpg";
+// import pictureSelect20 from "../img/GallerySelection/IMGP2447-1.jpg";
 import pictureSelect22 from "../img/GallerySelection/IMGP2694-1.jpg";
 import pictureSelect23 from "../img/GallerySelection/IMGP2986-1-2.jpg";
-import pictureSelect24 from "../img/GallerySelection/IMGP3055-1-3.jpg";
+// import pictureSelect24 from "../img/GallerySelection/IMGP3055-1-3.jpg";
 import pictureSelect26 from "../img/GallerySelection/IMGP3144-1.jpg";
-import pictureSelect6 from "../img/GallerySelection/IMGP0734.jpg";
+// import pictureSelect6 from "../img/GallerySelection/IMGP0734.jpg";
 import pictureSelect28 from "../img/GallerySelection/IMGP3248-1.jpg";
-import pictureSelect31 from "../img/GallerySelection/IMGP3608-1.jpg";
+// import pictureSelect31 from "../img/GallerySelection/IMGP3608-1.jpg";
 import pictureSelect32 from "../img/GallerySelection/IMGP3835-1-3.jpg";
 import pictureSelect33 from "../img/GallerySelection/IMGP6593.jpg";
 import pictureSelect34 from "../img/GallerySelection/IMGP6894.jpg";
@@ -188,24 +188,24 @@ function GalleryThematicOceanic() {
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box18ClickHandler() {
-        setCloseX(true);
-        setBox18Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box18ClickHandler() {
+    //     setCloseX(true);
+    //     setBox18Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box19ClickHandler() {
         setCloseX(true);
         setBox19Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box6ClickHandler() {
-        setCloseX(true);
-        setBox6Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box6ClickHandler() {
+    //     setCloseX(true);
+    //     setBox6Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box22ClickHandler() {
         setCloseX(true);
         setBox22Picture(true);
@@ -230,24 +230,24 @@ function GalleryThematicOceanic() {
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box14ClickHandler() {
-        setCloseX(true);
-        setBox14Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box14ClickHandler() {
+    //     setCloseX(true);
+    //     setBox14Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box15ClickHandler() {
         setCloseX(true);
         setBox15Picture(true);
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box20ClickHandler() {
-        setCloseX(true);
-        setBox20Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box20ClickHandler() {
+    //     setCloseX(true);
+    //     setBox20Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box26ClickHandler() {
         setCloseX(true);
         setBox26Picture(true);
@@ -260,12 +260,12 @@ function GalleryThematicOceanic() {
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box31ClickHandler() {
-        setCloseX(true);
-        setBox31Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box31ClickHandler() {
+    //     setCloseX(true);
+    //     setBox31Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box32ClickHandler() {
         setCloseX(true);
         setBox32Picture(true);
@@ -284,12 +284,12 @@ function GalleryThematicOceanic() {
         setBackdrop(true);
         document.body.style.overflowY = "hidden";
     }
-    function box24ClickHandler() {
-        setCloseX(true);
-        setBox24Picture(true);
-        setBackdrop(true);
-        document.body.style.overflowY = "hidden";
-    }
+    // function box24ClickHandler() {
+    //     setCloseX(true);
+    //     setBox24Picture(true);
+    //     setBackdrop(true);
+    //     document.body.style.overflowY = "hidden";
+    // }
     function box35ClickHandler() {
         setCloseX(true);
         setBox35Picture(true);

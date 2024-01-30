@@ -11,9 +11,6 @@
     justify-content: center;
     align-items: flex-end;
 }
-/* .mainFooter__link {
-    padding: 1.5rem; 
-} */
 .link {
     color: rgba(24, 158, 158, 0.933);
     text-decoration: none;

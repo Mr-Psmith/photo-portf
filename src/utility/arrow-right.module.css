@@ -12,6 +12,5 @@
     cursor: pointer;
 }
 .pictureSwitchRight:hover {
-    /* transform: scale(103%); */
     background-color: rgba(5.1, 23.5, 23.5, 0.933);
 }
