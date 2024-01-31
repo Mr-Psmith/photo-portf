@@ -135,13 +135,21 @@
 }
 
 @media (max-width: 1200px) {
-    .contactMain {
-        left: 10vw;
+    .contactUnvisibleblock1,
+    .contactUnvisibleblock2__icons__h1 {
+        font-size: 0.8rem;
+    }
+    .contactUnvisibleblock1_1 input {
+        font-size: 1rem;
+    }
+    .formContactMessageTextarea {
+        font-size: 1rem;
     }
 }
 @media (max-width: 700px) {
-    .contactMain {
-        top: 3vh;
+    .contactUnvisibleblock1,
+    .contactUnvisibleblock2__icons__h1 {
+        font-size: 0.7rem;
     }
     .contactUnvisibleblock2 .picPlus {
         width: 30vw;
@@ -154,15 +162,6 @@
     }
 }
 @media (max-width: 600px) {
-
-    .contactMain {
-        position: fixed;
-        top: 3vh;
-        left: 3vw;
-        width: 85vw;
-        height: 75vh;
-        font-size: 1.4rem;
-    }
 
     .contactUnvisibleblock1,
     .contactUnvisibleblock2 {
@@ -193,17 +192,18 @@
     }
 }
 @media(max-width: 300px) {
-    .contactMain {
-        top: 3vh;
-        left: -5vw;
-        width: 90vw;
-        height: 80vh;
+    .picPlus {
+        
+    }
+    .contactUnvisibleblock1,
+    .contactUnvisibleblock2__icons__h1 {
+        font-size: 0.5rem;
     }
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
     .contactUnvisibleblock2 .twitter {
-        width: 17vw;   
+        width: 14vw;   
     }
 
 }
