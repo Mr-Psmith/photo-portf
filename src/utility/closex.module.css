@@ -20,3 +20,11 @@
 .closeXMain:active {
     background-color: rgb(0, 255, 247);
 }
+@media (max-width: 600px) {
+    .closeXMain {
+        height: 3rem;
+        width: 3rem;
+        right: 5vw;
+        top: 4vh;
+    }
+}

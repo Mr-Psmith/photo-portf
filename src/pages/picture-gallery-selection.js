@@ -91,31 +91,31 @@ function GallerySelection(props) {
     function backdropHandler() {
 
         /* setTimeout(() => { */
-            setCloseX(false);
-            setSlider(false);
-            setBackdrop(false);
-            setBox16Picture(false);
-            setBox18Picture(false);
-            setBox19Picture(false);
-            setBox6Picture(false);
-            setBox22Picture(false);
-            setBox3Picture(false);
-            setBox7Picture(false);
-            setBox13Picture(false);
-            setBox14Picture(false);
-            setBox15Picture(false);
-            setBox20Picture(false);
-            setBox26Picture(false);
-            setBox28Picture(false);
-            setBox31Picture(false);
-            setBox32Picture(false);
-            setBox33Picture(false);
-            setBox34Picture(false);
-            setBox24Picture(false);
-            setBox35Picture(false);
-            setBox36Picture(false);
-            setBox37Picture(false);
-            setBox23Picture(false);
+        setCloseX(false);
+        setSlider(false);
+        setBackdrop(false);
+        setBox16Picture(false);
+        setBox18Picture(false);
+        setBox19Picture(false);
+        setBox6Picture(false);
+        setBox22Picture(false);
+        setBox3Picture(false);
+        setBox7Picture(false);
+        setBox13Picture(false);
+        setBox14Picture(false);
+        setBox15Picture(false);
+        setBox20Picture(false);
+        setBox26Picture(false);
+        setBox28Picture(false);
+        setBox31Picture(false);
+        setBox32Picture(false);
+        setBox33Picture(false);
+        setBox34Picture(false);
+        setBox24Picture(false);
+        setBox35Picture(false);
+        setBox36Picture(false);
+        setBox37Picture(false);
+        setBox23Picture(false);
         /* }, 2000); */
 
 
@@ -123,31 +123,31 @@ function GallerySelection(props) {
     }
     function wrapperCloseHandler() {
         /* setTimeout(() => { */
-            setSlider(false);
-            setBackdrop(false);
-            setCloseX(false);
-            setBox16Picture(false);
-            setBox18Picture(false);
-            setBox19Picture(false);
-            setBox6Picture(false);
-            setBox22Picture(false);
-            setBox3Picture(false);
-            setBox7Picture(false);
-            setBox13Picture(false);
-            setBox14Picture(false);
-            setBox15Picture(false);
-            setBox20Picture(false);
-            setBox26Picture(false);
-            setBox28Picture(false);
-            setBox31Picture(false);
-            setBox32Picture(false);
-            setBox33Picture(false);
-            setBox34Picture(false);
-            setBox24Picture(false);
-            setBox35Picture(false);
-            setBox36Picture(false);
-            setBox37Picture(false);
-            setBox23Picture(false);
+        setSlider(false);
+        setBackdrop(false);
+        setCloseX(false);
+        setBox16Picture(false);
+        setBox18Picture(false);
+        setBox19Picture(false);
+        setBox6Picture(false);
+        setBox22Picture(false);
+        setBox3Picture(false);
+        setBox7Picture(false);
+        setBox13Picture(false);
+        setBox14Picture(false);
+        setBox15Picture(false);
+        setBox20Picture(false);
+        setBox26Picture(false);
+        setBox28Picture(false);
+        setBox31Picture(false);
+        setBox32Picture(false);
+        setBox33Picture(false);
+        setBox34Picture(false);
+        setBox24Picture(false);
+        setBox35Picture(false);
+        setBox36Picture(false);
+        setBox37Picture(false);
+        setBox23Picture(false);
         /* }, 2000); */
 
 
@@ -157,31 +157,31 @@ function GallerySelection(props) {
     function closeAllHandler() {
 
         /* setTimeout(() => { */
-            setSlider(false);
-            setBackdrop(false);
-            setCloseX(false);
-            setBox16Picture(false);
-            setBox18Picture(false);
-            setBox19Picture(false);
-            setBox6Picture(false);
-            setBox22Picture(false);
-            setBox3Picture(false);
-            setBox7Picture(false);
-            setBox13Picture(false);
-            setBox14Picture(false);
-            setBox15Picture(false);
-            setBox20Picture(false);
-            setBox26Picture(false);
-            setBox28Picture(false);
-            setBox31Picture(false);
-            setBox32Picture(false);
-            setBox33Picture(false);
-            setBox34Picture(false);
-            setBox24Picture(false);
-            setBox35Picture(false);
-            setBox36Picture(false);
-            setBox37Picture(false);
-            setBox23Picture(false);
+        setSlider(false);
+        setBackdrop(false);
+        setCloseX(false);
+        setBox16Picture(false);
+        setBox18Picture(false);
+        setBox19Picture(false);
+        setBox6Picture(false);
+        setBox22Picture(false);
+        setBox3Picture(false);
+        setBox7Picture(false);
+        setBox13Picture(false);
+        setBox14Picture(false);
+        setBox15Picture(false);
+        setBox20Picture(false);
+        setBox26Picture(false);
+        setBox28Picture(false);
+        setBox31Picture(false);
+        setBox32Picture(false);
+        setBox33Picture(false);
+        setBox34Picture(false);
+        setBox24Picture(false);
+        setBox35Picture(false);
+        setBox36Picture(false);
+        setBox37Picture(false);
+        setBox23Picture(false);
         /* }, 2000); */
         document.body.style.overflowY = "scroll";
     }
@@ -407,40 +407,25 @@ function GallerySelection(props) {
 
             <div className={classes.PGallerySelection_main}>
 
-                <div className={classes.PGallerySelection__Box16}>
-                    <img src={pictureSelect16} alt="" onClick={box16ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box18}>
-                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box19}>
-                    <img src={pictureSelect19} alt="" onClick={box19ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box6}>
-                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box22}>
-                    <img src={pictureSelect22} alt="" onClick={box22ClickHandler}></img>
-                </div>
+                <img src={pictureSelect16} className={classes.PGallerySelection__Box} alt="" onClick={box16ClickHandler}></img>
+                <img src={pictureSelect18} className={classes.PGallerySelection__Box} alt="" onClick={box18ClickHandler}></img>
+                <img src={pictureSelect19} className={classes.PGallerySelection__Box} alt="" onClick={box19ClickHandler}></img>
+                <img src={pictureSelect6} className={classes.PGallerySelection__Box} alt="" onClick={box6ClickHandler}></img>
+                <img src={pictureSelect22} className={classes.PGallerySelection__Box22} alt="" onClick={box22ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box1}>
                     <img src={pictureSelect1} alt=""></img>
                 </div> */}
                 {/* <div className={classes.PGallerySelection__Box2}>
                     <img src={pictureSelect2} alt=""></img>
                 </div> */}
-                <div className={classes.PGallerySelection__Box3}>
-                    <img src={pictureSelect3} alt="" onClick={box3ClickHandler}></img>
-                </div>
+                <img src={pictureSelect3} className={classes.PGallerySelection__Box} alt="" onClick={box3ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box4}>
                     <img src={pictureSelect4} alt=""></img>
                 </div> */}
                 {/* <div className={classes.PGallerySelection__Box5}>
                     <img src={pictureSelect5} alt=""></img>
                 </div> */}
-
-                <div className={classes.PGallerySelection__Box7}>
-                    <img src={pictureSelect7} alt="" onClick={box7ClickHandler}></img>
-                </div>
+                <img src={pictureSelect7} className={classes.PGallerySelection__Box} alt="" onClick={box7ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box8}>
                     <img src={pictureSelect8} alt=""></img>
                 </div>
@@ -456,23 +441,13 @@ function GallerySelection(props) {
                 {/* <div className={classes.PGallerySelection__Box12}>
                     <img src={pictureSelect12} alt=""></img>
                 </div> */}
-                <div className={classes.PGallerySelection__Box13}>
-                    <img src={pictureSelect13} alt="" onClick={box13ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box14}>
-                    <img src={pictureSelect14} alt="" onClick={box14ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box15}>
-                    <img src={pictureSelect15} alt="" onClick={box15ClickHandler}></img>
-                </div>
-
+                <img src={pictureSelect13} className={classes.PGallerySelection__Box} alt="" onClick={box13ClickHandler}></img>
+                <img src={pictureSelect14} className={classes.PGallerySelection__Box} alt="" onClick={box14ClickHandler}></img>
+                <img src={pictureSelect15} className={classes.PGallerySelection__Box} alt="" onClick={box15ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box17}>
                     <img src={pictureSelect17} alt=""></img>
                 </div> */}
-
-                <div className={classes.PGallerySelection__Box20}>
-                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler}></img>
-                </div>
+                <img src={pictureSelect20} className={classes.PGallerySelection__Box} alt="" onClick={box20ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box21}>
                     <img src={pictureSelect21} alt=""></img>
                 </div> */}
@@ -480,50 +455,26 @@ function GallerySelection(props) {
                 {/* <div className={classes.PGallerySelection__Box25}>
                     <img src={pictureSelect25} alt=""></img>
                 </div> */}
-                <div className={classes.PGallerySelection__Box26}>
-                    <img src={pictureSelect26} alt="" onClick={box26ClickHandler}></img>
-                </div>
+                <img src={pictureSelect26} className={classes.PGallerySelection__Box} alt="" onClick={box26ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box27}>
                     <img src={pictureSelect27} alt=""></img>
                 </div> */}
-                <div className={classes.PGallerySelection__Box28}>
-                    <img src={pictureSelect28} alt="" onClick={box28ClickHandler}></img>
-                </div>
+                <img src={pictureSelect28} className={classes.PGallerySelection__Box} alt="" onClick={box28ClickHandler}></img>
                 {/* <div className={classes.PGallerySelection__Box29}>
                     <img src={pictureSelect29} alt=""></img>
                 </div>
                 <div className={classes.PGallerySelection__Box30}>
                     <img src={pictureSelect30} alt=""></img>
                 </div> */}
-                <div className={classes.PGallerySelection__Box31}>
-                    <img src={pictureSelect31} alt="" onClick={box31ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box32}>
-                    <img src={pictureSelect32} alt="" onClick={box32ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box33}>
-                    <img src={pictureSelect33} alt="" onClick={box33ClickHandler}></img>
-                </div>
-
-                <div className={classes.PGallerySelection__Box34}>
-                    <img src={pictureSelect34} alt="" onClick={box34ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box24}>
-                    <img src={pictureSelect24} alt="" onClick={box24ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box35}>
-                    <img src={pictureSelect35} alt="" onClick={box35ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box36}>
-                    <img src={pictureSelect36} alt="" onClick={box36ClickHandler}></img>
-                </div>
-                <div className={classes.PGallerySelection__Box37}>
-                    <img src={pictureSelect37} alt="" onClick={box37ClickHandler}></img>
-                </div>
-
-                <div className={classes.PGallerySelection__Box23}>
-                    <img src={pictureSelect23} alt="" onClick={box23ClickHandler}></img>
-                </div>
+                <img src={pictureSelect31} className={classes.PGallerySelection__Box} alt="" onClick={box31ClickHandler}></img>
+                <img src={pictureSelect32} className={classes.PGallerySelection__Box} alt="" onClick={box32ClickHandler}></img>
+                <img src={pictureSelect33} className={classes.PGallerySelection__Box} alt="" onClick={box33ClickHandler}></img>
+                <img src={pictureSelect34} className={classes.PGallerySelection__Box} alt="" onClick={box34ClickHandler}></img>
+                <img src={pictureSelect24} className={classes.PGallerySelection__Box24} alt="" onClick={box24ClickHandler}></img>
+                <img src={pictureSelect35} className={classes.PGallerySelection__Box} alt="" onClick={box35ClickHandler}></img>
+                <img src={pictureSelect36} className={classes.PGallerySelection__Box} alt="" onClick={box36ClickHandler}></img>
+                <img src={pictureSelect37} className={classes.PGallerySelection__Box} alt="" onClick={box37ClickHandler}></img>
+                <img src={pictureSelect23} className={classes.PGallerySelection__Box23} alt="" onClick={box23ClickHandler}></img>
             </div>
         </>
     )

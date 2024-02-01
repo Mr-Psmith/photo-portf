@@ -40,3 +40,11 @@
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+
+@media (max-width: 600px) {
+    .menuMain__links {
+        padding: 0.3vw;
+        letter-spacing: 0.2vw;
+        font-size: 1.8vh;
+    }
+}

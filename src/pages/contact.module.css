@@ -51,15 +51,6 @@
     border-color: red;
 }
 
-.contactUnvisibleblock1_1 {
-    padding-bottom: 1vh;
-}
-.contactUnvisibleblock1_1 input {
-    width: 100%;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-bottom: 0.4vh;
-}
 .formContactMessageTextarea {
     margin-top: 0.3vh;
     width: 100%;
@@ -162,15 +153,26 @@
     }
 }
 @media (max-width: 600px) {
-
-    .contactUnvisibleblock1,
+    .contactUnvisibleblock1 {
+        width: 85vw;
+        text-align: center;
+        margin: auto;
+        padding: 1vh 1vw;
+        max-width: 85vw;
+    }
     .contactUnvisibleblock2 {
         margin: 5vh 0vw;
         padding: 1vh 1vw;
         width: 100%;
     }
-    .contactUnvisibleblock1 {
-        display: none;
+    .contactUnvisibleblock1 h1 {
+        font-size: 1.2rem;
+    }
+    .contactFormButtons {
+        width: 85vw;
+    }
+    .contactFormButtons button {
+        font-size: 1.2rem;
     }
    
     .contactUnvisibleblock2 {
@@ -181,20 +183,21 @@
         border-top: rgb(127, 99, 5) 7px solid;
         border-bottom: rgb(127, 99, 5) 7px solid;
     }
+    .picPlus__wrap {
+        display: none;
+    }
     .contactUnvisibleblock2 .picPlus {
         width: 50vw;
+        display: none;
     }
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
     .contactUnvisibleblock2 .twitter {
-        width: 17vw;   
+        width: 13vw;   
     }
 }
 @media(max-width: 300px) {
-    .picPlus {
-        
-    }
     .contactUnvisibleblock1,
     .contactUnvisibleblock2__icons__h1 {
         font-size: 0.5rem;

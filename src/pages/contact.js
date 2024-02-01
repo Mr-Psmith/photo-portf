@@ -24,7 +24,7 @@ function Contact() {
 
 return (
     <>
-        <div>
+        <div className={classes.contact_contactMain}>
             <div className={classes.contactMain}>
                 <div className={classes.contactUnvisibleblock1}>
                     <h1>You can write me on my email address!</h1>

@@ -14,3 +14,11 @@
 .pictureSwitchRight:hover {
     background-color: rgba(5.1, 23.5, 23.5, 0.933);
 }
+
+@media (max-width: 600px) {
+    .pictureSwitchRight {
+        border: 2px solid rgba(24, 158, 158, 0.933);
+        width: 7vw; height: 7vh;
+        right: 1vw;
+    }
+}

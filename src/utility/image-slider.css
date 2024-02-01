@@ -63,3 +63,19 @@
     transform: translateY(0);
     transition-duration: 0.5s;
   }
+
+  @media (max-width: 600px) {
+    .left-arrow,
+    .right-arrow {
+      border: 3px;
+    }
+    .image {
+      margin: 0 auto;
+      width: 75vw;
+      max-height: 90vh;
+      z-index: 211;
+      box-sizing: border-box;
+      border: 3px rgba(10, 57, 57, 0.933) solid;
+      border-radius: 15px;
+    }
+}
