@@ -1,6 +1,5 @@
 .galleryThematic__main {
     position: relative;
-    top: 16vh;
     width: 90vw;
     margin: 2.5vh auto;
     padding: 0vh 0vw;
@@ -41,6 +40,11 @@
 .menuImages:hover {
     transform: scale(101%);
     box-shadow: 9px 10px 0 rgba(0, 0, 0, 0.226), 0 8px 30px 0 rgba(0, 0, 0, 0.384);
+}
+@media (max-width: 600px) {
+    .menuImages {
+        height: 26vh;
+    }
 }
 
 @media (max-width: 300px) {

@@ -404,18 +404,10 @@ function GalleryThematicAzores() {
 
             <motion.div initial={{ y: "-900%" }} animate={{ y: 0 }} transition={{ delay: 0, duration: 1, type: "spring", bounce: 0.1 }} exit={{ y: "900%" }} className={classes.PGalleryThematic_main}>
 
-                <div className={classes.PGalleryThematic__Box16}>
-                    <img src={pictureSelect16} alt="" onClick={box16ClickHandler}></img>
-                </div>
-                <div className={classes.PGalleryThematic__Box18}>
-                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler}></img>
-                </div>
-                <div className={classes.PGalleryThematic__Box19}>
-                    <img src={pictureSelect19} alt="" onClick={box19ClickHandler}></img>
-                </div>
-                <div className={classes.PGalleryThematic__Box6}>
-                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect16} alt="" onClick={box16ClickHandler} className={classes.PGalleryThematic__Box}></img>
+                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler} className={classes.PGalleryThematic__Box}></img>
+                    <img src={pictureSelect19} alt="" onClick={box19ClickHandler} className={classes.PGalleryThematic__Box}></img>
+                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic__Box22}>
                     <img src={pictureSelect22} alt="" onClick={box22ClickHandler}></img>
                 </div> */}
@@ -434,10 +426,7 @@ function GalleryThematicAzores() {
                 {/* <div className={classes.PGalleryThematic__Box5}>
                     <img src={pictureSelect5} alt=""></img>
                 </div> */}
-
-                <div className={classes.PGalleryThematic__Box7}>
-                    <img src={pictureSelect7} alt="" onClick={box7ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect7} alt="" onClick={box7ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic__Box8}>
                     <img src={pictureSelect8} alt=""></img>
                 </div>
@@ -456,9 +445,7 @@ function GalleryThematicAzores() {
                 {/* <div className={classes.PGalleryThematic__Box13}>
                     <img src={pictureSelect13} alt="" onClick={box13ClickHandler}></img>
                 </div> */}
-                <div className={classes.PGalleryThematic__Box14}>
-                    <img src={pictureSelect14} alt="" onClick={box14ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect14} alt="" onClick={box14ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic__Box15}>
                     <img src={pictureSelect15} alt="" onClick={box15ClickHandler}></img>
                 </div> */}
@@ -466,10 +453,7 @@ function GalleryThematicAzores() {
                 {/* <div className={classes.PGalleryThematic__Box17}>
                     <img src={pictureSelect17} alt=""></img>
                 </div> */}
-
-                <div className={classes.PGalleryThematic__Box20}>
-                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic__Box21}>
                     <img src={pictureSelect21} alt=""></img>
                 </div> */}
@@ -483,9 +467,7 @@ function GalleryThematicAzores() {
                 {/* <div className={classes.PGalleryThematic__Box27}>
                     <img src={pictureSelect27} alt=""></img>
                 </div> */}
-                <div className={classes.PGalleryThematic__Box28}>
-                    <img src={pictureSelect28} alt="" onClick={box28ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect28} alt="" onClick={box28ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic__Box29}>
                     <img src={pictureSelect29} alt=""></img>
                 </div>
@@ -518,9 +500,8 @@ function GalleryThematicAzores() {
                     <img src={pictureSelect37} alt="" onClick={box37ClickHandler}></img>
                 </div> */}
 
-                <div className={classes.PGalleryThematic__Box23}>
-                    <img src={pictureSelect23} alt="" onClick={box23ClickHandler}></img>
-                </div>
+                
+                    <img src={pictureSelect23} alt="" onClick={box23ClickHandler} className={classes.PGalleryThematic__Box23}></img>
             </motion.div>
         </>
     )

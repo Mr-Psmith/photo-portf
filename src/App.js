@@ -26,14 +26,7 @@ function App() {
 
     <div className={classes.main__App} >
       <RouterProvider router={router} >
-        <section>
-        </section>
-        <section>
-          <GallerySubMenu />
-        </section>
-        <section className={classes.section__footer}>
-
-        </section>
+        <GallerySubMenu />
       </RouterProvider>
     </div>
   );

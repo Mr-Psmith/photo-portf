@@ -406,15 +406,11 @@ function GalleryThematicGreenery() {
                 {/* <div className={classes.PGalleryThematic_main__Box16}>
                     <img src={pictureSelect16} alt="" onClick={box16ClickHandler}></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box18}>
-                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box19}>
                     <img src={pictureSelect19} alt="" onClick={box19ClickHandler}></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box6}>
-                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box22}>
                     <img src={pictureSelect22} alt="" onClick={box22ClickHandler}></img>
                 </div> */}
@@ -424,9 +420,7 @@ function GalleryThematicGreenery() {
                 {/* <div className={classes.PGalleryThematic_main__Box2}>
                     <img src={pictureSelect2} alt=""></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box3}>
-                    <img src={pictureSelect3} alt="" onClick={box3ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect3} alt="" onClick={box3ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box4}>
                     <img src={pictureSelect4} alt=""></img>
                 </div> */}
@@ -455,9 +449,7 @@ function GalleryThematicGreenery() {
                 {/* <div className={classes.PGalleryThematic_main__Box13}>
                     <img src={pictureSelect13} alt="" onClick={box13ClickHandler}></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box14}>
-                    <img src={pictureSelect14} alt="" onClick={box14ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect14} alt="" onClick={box14ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box15}>
                     <img src={pictureSelect15} alt="" onClick={box15ClickHandler}></img>
                 </div> */}
@@ -465,10 +457,7 @@ function GalleryThematicGreenery() {
                 {/* <div className={classes.PGalleryThematic_main__Box17}>
                     <img src={pictureSelect17} alt=""></img>
                 </div> */}
-
-                <div className={classes.PGalleryThematic_main__Box20}>
-                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box21}>
                     <img src={pictureSelect21} alt=""></img>
                 </div> */}
@@ -491,9 +480,7 @@ function GalleryThematicGreenery() {
                 <div className={classes.PGalleryThematic_main__Box30}>
                     <img src={pictureSelect30} alt=""></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box31}>
-                    <img src={pictureSelect31} alt="" onClick={box31ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect31} alt="" onClick={box31ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box32}>
                     <img src={pictureSelect32} alt="" onClick={box32ClickHandler}></img>
                 </div>
@@ -504,9 +491,7 @@ function GalleryThematicGreenery() {
                 {/* <div className={classes.PGalleryThematic_main__Box34}>
                     <img src={pictureSelect34} alt="" onClick={box34ClickHandler}></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box24}>
-                    <img src={pictureSelect24} alt="" onClick={box24ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect24} alt="" onClick={box24ClickHandler} className={classes.PGalleryThematic__Box24}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box35}>
                     <img src={pictureSelect35} alt="" onClick={box35ClickHandler}></img>
                 </div> */}

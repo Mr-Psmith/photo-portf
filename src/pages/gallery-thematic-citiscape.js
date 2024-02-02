@@ -405,15 +405,9 @@ function GalleryThematicCitiscape() {
                 {/* <div className={classes.PGalleryThematic_main__Box16}>
                     <img src={pictureSelect16} alt="" onClick={box16ClickHandler}></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box18}>
-                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler}></img>
-                </div>
-                <div className={classes.PGalleryThematic_main__Box19}>
-                    <img src={pictureSelect19} alt="" onClick={box19ClickHandler}></img>
-                </div>
-                <div className={classes.PGalleryThematic_main__Box6}>
-                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect18} alt="" onClick={box18ClickHandler} className={classes.PGalleryThematic__Box}></img>
+                    <img src={pictureSelect19} alt="" onClick={box19ClickHandler} className={classes.PGalleryThematic__Box}></img>
+                    <img src={pictureSelect6} alt="" onClick={box6ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box22}>
                     <img src={pictureSelect22} alt="" onClick={box22ClickHandler}></img>
                 </div> */}
@@ -464,10 +458,7 @@ function GalleryThematicCitiscape() {
                 {/* <div className={classes.PGalleryThematic_main__Box17}>
                     <img src={pictureSelect17} alt=""></img>
                 </div> */}
-
-                <div className={classes.PGalleryThematic_main__Box20}>
-                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect20} alt="" onClick={box20ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box21}>
                     <img src={pictureSelect21} alt=""></img>
                 </div> */}
@@ -481,9 +472,7 @@ function GalleryThematicCitiscape() {
                 {/* <div className={classes.PGalleryThematic_main__Box27}>
                     <img src={pictureSelect27} alt=""></img>
                 </div> */}
-                <div className={classes.PGalleryThematic_main__Box28}>
-                    <img src={pictureSelect28} alt="" onClick={box28ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect28} alt="" onClick={box28ClickHandler} className={classes.PGalleryThematic__Box}></img>
                 {/* <div className={classes.PGalleryThematic_main__Box29}>
                     <img src={pictureSelect29} alt=""></img>
                 </div>
@@ -515,10 +504,7 @@ function GalleryThematicCitiscape() {
                 <div className={classes.PGalleryThematic_main__Box37}>
                     <img src={pictureSelect37} alt="" onClick={box37ClickHandler}></img>
                 </div> */}
-
-                <div className={classes.PGalleryThematic_main__Box23}>
-                    <img src={pictureSelect23} alt="" onClick={box23ClickHandler}></img>
-                </div>
+                    <img src={pictureSelect23} alt="" onClick={box23ClickHandler} className={classes.PGalleryThematic__Box23}></img>
             </motion.div>
         </>
     )

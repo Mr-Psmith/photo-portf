@@ -57,6 +57,9 @@
         font-size: 0.9rem;
         letter-spacing: 0.1vw;
     }
+    .menuMain__links {
+        padding: 1vh 2.2vw;
+    }
 }
 @media (max-width: 300px) {
     .menuMain__links {

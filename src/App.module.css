@@ -1,24 +1,35 @@
 .main__App {
   text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   margin: 0;
   background-color: rgba(6, 7, 7, 0.933);
   color: snow;
   min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 html {
+  height: 100vh;
   overflow-x: hidden;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body {
+  height: 100vh;
   overflow-x: hidden;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-section {
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+.router {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

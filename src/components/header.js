@@ -9,7 +9,7 @@ function Header(props) {
     const [glideUp, setGlideUp] = useState(false);
     const [prevOffset, setPrevOffset] = useState(0);
 
-    function scrollupHandler ()  {
+    function scrollupHandler() {
         let scrollY = window.scrollY
         if (scrollY > prevOffset && scrollY > 5) {
             setGlideUp(true);
@@ -23,11 +23,10 @@ function Header(props) {
 
     return (
         <>
-            <div className={classes.header__wrapper}/>
-                <motion.div animate={{ y: glideUp ? "-110%" : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} className={classes.header_main}  onScroll={scrollupHandler}>
-                    <HeaderUpper />
-                    <MenuMain galleryBackToNormalHandler={props.galleryBackToNormalHandler}/>
-                </motion.div>
+            <motion.div animate={{ y: glideUp ? "-110%" : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} className={classes.header_main} onScroll={scrollupHandler}>
+                <HeaderUpper />
+                <MenuMain galleryBackToNormalHandler={props.galleryBackToNormalHandler} />
+            </motion.div>
         </>
     )
 }
