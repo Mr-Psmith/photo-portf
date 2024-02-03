@@ -30,70 +30,92 @@ import picture30Select37 from "../img/picsResized30/IMGP7655.jpg";
 
 const sliderData = [
   {
-    image: picture30Select7
+    image: picture30Select7,
+    id: 0
   },
   {
-    image: picture30Select3
+    image: picture30Select3,
+    id: 1
   },
   {
-    image: picture30Select13
+    image: picture30Select13,
+    id: 2
   },
   {
-    image: picture30Select14
+    image: picture30Select14,
+    id: 3
   },
   {
-    image: picture30Select15
+    image: picture30Select15,
+    id: 4
   },
   {
-    image: picture30Select16
+    image: picture30Select16,
+    id: 5
   },
   /* {
-    image: picture30Select18
+    image: picture30Select18,
+    id: 0
   }, */
   {
-    image: picture30Select19
+    image: picture30Select19,
+    id: 6
   },
   {
-    image: picture30Select20
+    image: picture30Select20,
+    id: 7
   },
   {
-    image: picture30Select22
+    image: picture30Select22,
+    id: 8
   },
   {
-    image: picture30Select23
+    image: picture30Select23,
+    id: 9
   },
   {
-    image: picture30Select24
+    image: picture30Select24,
+    id: 10
   },
   {
-    image: picture30Select26
+    image: picture30Select26,
+    id: 11
   },
   {
-    image: picture30Select6
+    image: picture30Select6,
+    id: 12
   },
   {
-    image: picture30Select28
+    image: picture30Select28,
+    id: 13
   },
   {
-    image: picture30Select31
+    image: picture30Select31,
+    id: 14
   },
   {
-    image: picture30Select32
+    image: picture30Select32,
+    id: 15
   },
   {
-    image: picture30Select33
+    image: picture30Select33,
+    id: 16
   },
   {
-    image: picture30Select34
+    image: picture30Select34,
+    id: 17
   },
   {
-    image: picture30Select35
+    image: picture30Select35,
+    id: 18
   },
   {
-    image: picture30Select36
+    image: picture30Select36,
+    id: 19
   },
   {
-    image: picture30Select37
+    image: picture30Select37,
+    id: 20
   },
 ]
 
