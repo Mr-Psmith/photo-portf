@@ -1,8 +1,9 @@
 import classes from "./contact.module.css";
-import facPic from "../img/fac.jpg";
-import inst from "../img/insta.png";
-import twit from "../img/twit.png";
-import gith from "../img/github.png";
+import facPic from "../img/facebookGold.png";
+import inst from "../img/instaGold.png";
+import twit from "../img/twitterGold.png";
+import gith from "../img/github130Gold.png";
+import linkedin from "../img/linkedinGold.png";
 import pic from "../img/picsResizedTo10/IMGP1102.jpg";
 import { useState } from "react";
 import EmailCopyPopup from "../utility/email-copy-popup";
@@ -52,6 +53,9 @@ return (
                             </a>
                             <a href="https://twitter.com/messages/1581314633595494400-1581314633595494400?text=" target="_blank" rel="noreferrer">
                                 <img src={twit} alt="Twit" className={classes.twitter}></img>
+                            </a>
+                            <a href="https://twitter.com/messages/1581314633595494400-1581314633595494400?text=" target="_blank" rel="noreferrer">
+                                <img src={linkedin} alt="Linkedin" className={classes.linkedin}></img>
                             </a>
                         </div>
                     </div>

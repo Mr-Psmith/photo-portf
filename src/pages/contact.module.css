@@ -80,7 +80,7 @@
 .contactFormButtons button:hover {
     background-color: rgba(5, 24, 24, 0.77);
     border-radius: 200px;
-    color: rgb(176, 136, 7);
+    color: #b08807;
 }
 
 .contactUnvisibleblock2 {
@@ -108,22 +108,25 @@
 .contactUnvisibleblock2 .fac,
 .contactUnvisibleblock2 .inst,
 .contactUnvisibleblock2 .github,
-.contactUnvisibleblock2 .twitter {
-    width: 5vw;
-    border-radius: 17px;
+.contactUnvisibleblock2 .twitter,
+.contactUnvisibleblock2 .linkedin {
+    width: 4.5vw;
+    border-radius: 170px;
     cursor: pointer;
 }
 .contactUnvisibleblock2 .fac:hover,
 .contactUnvisibleblock2 .inst:hover,
 .contactUnvisibleblock2 .twitter:hover,
-.contactUnvisibleblock2 .github:hover {
-    background-color: rgb(3, 43, 43);
+.contactUnvisibleblock2 .github:hover,
+.contactUnvisibleblock2 .linkedin:hover {
+    background: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)) no-repeat;
+    filter: invert(100%);
 }
 
-.contactUnvisibleblock2 .github,
+/* .contactUnvisibleblock2 .github,
 .contactUnvisibleblock2 .twitter {
     border-radius: 200px;
-}
+} */
 
 @media (max-width: 1200px) {
     .contactUnvisibleblock1,
