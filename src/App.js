@@ -6,9 +6,13 @@ import Contact from "./pages/contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import GallerySubMenu from './utility/gallery-submenu';
+import Loader from './utility/loader';
+import { useState } from 'react';
 
 
 function App() {
+
+  const [loader, setLoader] = useState(true);
 
   const router = createBrowserRouter([
     {
@@ -21,10 +25,15 @@ function App() {
     },
   ]);
 
+  //To unmount the loader after firing
+  setTimeout(() => {
+    setLoader(false);
+  }, 5700);
 
   return (
 
     <div className={classes.main__App} >
+      {loader ? <Loader /> : ""}
       <RouterProvider router={router} >
         <GallerySubMenu />
       </RouterProvider>

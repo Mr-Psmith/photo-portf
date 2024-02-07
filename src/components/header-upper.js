@@ -1,3 +1,4 @@
+import Logo from "./logo";
 import classes from "./header-upper.module.css";
 import {motion} from "framer-motion";
 
@@ -11,12 +12,7 @@ function HeaderUpper() {
                     <h1>Hi, I am Pal Szenthe this is my photographer portfolio, please enjoy</h1>
                 </div>
                 <div className={classes.HeaderUpper__right}>
-                    <motion.div initial={{ x: "300%" }} animate={{ x: "-100%" }} transition={{ delay: 4, duration: 1, type: "spring", bounce: 0.2 }}>
-                        <h1 className={classes.pWord}>P</h1>
-                    </motion.div>
-                    <motion.div initial={{ x: "-300%" }} animate={{ x: "-100%" }} transition={{ delay: 4, duration: 1, type: "spring", bounce: 0.2 }}>
-                        <h1 className={classes.sWord}>S</h1>
-                    </motion.div>
+                    <Logo />
                 </div>
 
             </div>

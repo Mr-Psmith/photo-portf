@@ -1,0 +1,82 @@
+.pWord {
+    font-family: "EnchantedLand";
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 74vw;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.sWord {
+    font-family: "EnchantedLand";
+    margin: 0 auto;
+    position: absolute;
+    top: 3vh;
+    left: 74.7vw;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 1400px) {
+    .pWord {
+        top: 0;
+        left: 49vw;
+        font-size: 4rem;
+    }
+    .sWord {
+        top: 4vh;
+        left: 50vw;
+        font-size: 4rem;
+    }
+}
+@media (max-width: 1200px) {
+    .pWord {
+        top: 0;
+        left: 48.7vw;
+        font-size: 4rem;
+    }
+    .sWord {
+        top: 5.7vh;
+        left: 50vw;
+        font-size: 4rem;
+    }
+}
+@media (max-width: 850px) {
+    .pWord {
+        top: 0;
+        left: 49vw;
+        font-size: 4rem;
+    }
+    .sWord {
+        top: 3.5vh;
+        left: 50.5vw;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .pWord {
+        top: 0;
+        left: 79vw;
+        font-size: 3rem;
+    }
+    .sWord {
+        top: 4vh;
+        left: 82vw;
+        font-size: 3rem;
+    }
+}
+@media (max-width: 300px) {
+    .pWord {
+        top: 0;
+        left: 79.5vw;
+        font-size: 2.5rem;
+    }
+    .sWord {
+        top: 4vh;
+        left: 82vw;
+        font-size: 2.5rem;
+    }
+}

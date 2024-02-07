@@ -15,6 +15,7 @@
     background-color: rgba(3, 10, 10, 0.933);
     border-bottom: snow 1px solid;
     border-top: snow 1px solid;
+    border-radius: 100px;
 }
 
 .menu_main li {

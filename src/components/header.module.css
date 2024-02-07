@@ -1,5 +1,7 @@
 .header_main {
     position: relative;
+    display: grid;
+    grid-template-rows: 60% 40%;
     top: 0; left: 0;
     width: 100vw;
     height: 15vh;
