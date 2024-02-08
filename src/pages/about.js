@@ -6,11 +6,11 @@ function About() {
         <>
             <div className={classes.aboutMain}>
                 <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-                <p>do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Hi Iam Pal Szenthe, and this is my photographer portfolio!</p>
+                <p>I shoot photos daily, and I quite enjoy the artistic qualities of the photo elaboration</p>
+                <p>I like walking in nature and working around the countryside with animals and the landscape as well</p>
+                <p>I shooted many pictures on the Azores, and around Vancouver</p>
+                <p>Currently I am bethween jobs, and using photography mainly as a hobby</p>
             </div>
         </>
     );

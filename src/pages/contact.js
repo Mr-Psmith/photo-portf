@@ -4,7 +4,7 @@ import inst from "../img/instaGold.png";
 import twit from "../img/twitterGold.png";
 import gith from "../img/github130Gold.png";
 import linkedin from "../img/linkedinGold.png";
-import pic from "../img/picsResizedTo10/IMGP1102.jpg";
+import pic from "../img/5.png";
 import { useState } from "react";
 import EmailCopyPopup from "../utility/email-copy-popup";
 

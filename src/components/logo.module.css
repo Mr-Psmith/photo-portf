@@ -4,7 +4,7 @@
     position: absolute;
     top: 0;
     left: 74vw;
-    font-size: 4rem;
+    font-size: 5vh;
     font-weight: 400;
 }
 .sWord {
@@ -13,7 +13,7 @@
     position: absolute;
     top: 3vh;
     left: 74.7vw;
-    font-size: 4rem;
+    font-size: 5vh;
     font-weight: 400;
 }
 
@@ -22,61 +22,53 @@
 @media (max-width: 1400px) {
     .pWord {
         top: 0;
-        left: 49vw;
-        font-size: 4rem;
+        font-size: 4.5vh;
     }
     .sWord {
-        top: 4vh;
-        left: 50vw;
-        font-size: 4rem;
+        /* top: 4vh; */
+        font-size: 4.5vh;
     }
 }
 @media (max-width: 1200px) {
     .pWord {
         top: 0;
-        left: 48.7vw;
-        font-size: 4rem;
+        /* font-size: ; */
     }
     .sWord {
-        top: 5.7vh;
-        left: 50vw;
-        font-size: 4rem;
+        /* top: 5.7vh; */
+        left: 75.5vw;
+        /* font-size: ; */
     }
 }
 @media (max-width: 850px) {
     .pWord {
         top: 0;
-        left: 49vw;
-        font-size: 4rem;
+        /* font-size: ; */
     }
     .sWord {
         top: 3.5vh;
-        left: 50.5vw;
-        font-size: 4rem;
+        /* font-size: ; */
     }
 }
 
 @media (max-width: 600px) {
     .pWord {
-        top: 0;
-        left: 79vw;
-        font-size: 3rem;
+        top: 0.5vh;
+        font-size: 4vh;
     }
     .sWord {
-        top: 4vh;
-        left: 82vw;
-        font-size: 3rem;
+        top: 3.5vh;
+        font-size: 4vh;
+        left: 76.5vw;
     }
 }
 @media (max-width: 300px) {
     .pWord {
-        top: 0;
-        left: 79.5vw;
-        font-size: 2.5rem;
+        top: 0.5vh;
+        /* font-size: ; */
     }
     .sWord {
-        top: 4vh;
-        left: 82vw;
-        font-size: 2.5rem;
+        top: 3vh;
+        /* font-size: ; */
     }
 }
