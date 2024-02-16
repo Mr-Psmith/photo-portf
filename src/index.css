@@ -28,7 +28,7 @@ code {
 
 @media (min-width: 1200px) {
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 0.25vw;
     overflow-y: scroll;
     box-sizing: border-box;
   }
